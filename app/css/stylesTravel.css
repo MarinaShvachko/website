@@ -1,0 +1,131 @@
+/* TODO: написать в одну строку все, что можно объединить*/
+
+* {
+	margin: 0;
+}
+
+html,
+body {
+  	height: 100%;
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+}
+
+a:hover { 
+    text-decoration: underline;
+}
+
+.container {
+	width: 60%;
+	display: flex;
+	flex-wrap: wrap;
+	margin: auto;
+}
+
+/***** content *****/
+
+.projectWrapper {
+	min-height: calc(100vh - 100px); /*press footer to bottom*/
+	width: 100%;
+}
+
+.project {      /*container for item*/
+	padding-top: 15px;
+	padding-bottom: 15px; /*написать в олну строку*/
+	width: 15%;
+	box-sizing: border-box;
+	border: 1px solid #fff;
+	/*height: 100%;*/
+	/*background: url("../img/Flag_of_Turkey.png") no-repeat;*/
+	background-position: center;
+    background-size: cover
+    
+}
+
+.project1 {      /*container for item*/
+	padding-top: 15px;
+	padding-bottom: 15px; /*написать в олну строку*/
+	width: 15%;
+	box-sizing: border-box;
+	border: 1px solid #fff;
+	height: 100%;
+	background: url("../img/Flag_of_Turkey.png") no-repeat;
+	background-position: center;
+    background-size: cover
+    
+}
+
+.img {      /*container for item*/
+	width: 100%;
+	box-sizing: border-box;
+	border: 1px solid #fff;
+	/*height: 100px;*/
+	/*background: url("../img/Flag_of_Turkey.png") no-repeat;*/
+	background-position: center;
+    background-size: cover;
+}
+
+.imgForSmallFlag {
+	width: 100%;
+	box-sizing: border-box;
+	border: 1px solid #fff;
+	/*: 100px;*/
+	background-position: center;
+    background-size: cover;
+	border-color: #333;
+}
+
+.rrr {
+	background-color: green;
+}
+
+
+.try {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.img {
+  max-width: none;
+  
+  min-width: auto;
+  min-height: auto;
+  
+  height: 100%;
+  
+ /* position: absolute;*/
+  
+  top: 50%;
+  left: 50%;
+  
+  /*transform: translate(-50%, -50%);*/
+}
+
+
+.countryName {
+	font-family: 'Arial';
+    color: #2c2c2c;
+    font-size: 22px;
+    line-height: 28px;
+    text-align: center;
+    /*padding-top: 30px;*/
+    display: block;
+     height: 100%;
+}
+
+.source {
+	font-family: 'Arial';
+    color: #2c2c2c;
+    font-size: 10px;
+    line-height: 28px;
+    text-align: center;
+    color: blue;
+}
+
+.countryName:hover {
+	text-decoration: underline;
+}

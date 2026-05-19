@@ -1,26 +1,227 @@
+/* app/globals.css */
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* Import your specific global layout assets */
+@import "./css/common.css";
+@import "./css/styles.css";
+@import "./css/adaptive.css";
+
+* {
+	margin: 0;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+a {
+	text-decoration: none;
+	color: #fff;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+a:hover { 
+    text-decoration: underline;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+h1 {
+	color: #fff;
+    text-transform: uppercase;
+    font-size: 45px;
+    line-height: 60px;
+    margin: 5px 0 17px;
+    letter-spacing: -1.4px;
 }
+
+h2 {
+	text-transform: uppercase;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 42px;
+    letter-spacing: -1px;
+}
+
+p {
+	font-family: 'Arial';
+    color: #fff;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.container {
+	width: 60%;
+	display: flex;
+	flex-wrap: wrap;
+	margin: auto;
+}
+
+/***** introduction *****/
+
+.introduction {
+	display: flex;
+	width: 100%;
+	height: 500px;
+	background: url("/img/sri2.jpg") no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.lightOverlay { /*semitransparent overlay under photo*/
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.1);
+    display: flex;
+}
+
+.introductionText { /*container*/
+	width:90%;
+	margin: auto;
+	display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.mainSlogan {
+	width:100%;
+	order: 1;
+}
+
+.slogan {
+	width: 100%;
+	order:2;
+	text-align: center;
+	color: #00af58;
+	text-align: end;
+}
+
+/***** about me *****/
+
+.aboutMe {
+	width: 50%;
+	background: url("/img/casino.jpg") no-repeat;
+	display: flex;
+	height: 550px;
+	background-size: cover;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
+    display: flex;
+}
+
+.myPhoto {
+	width: 50%;
+	height: 550px;
+	display: flex;
+	flex-wrap: wrap;
+	background: url("/img/me.jpg") no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+/***** certificates *****/
+
+.certificateTitle {
+	font-size: 22px;
+    line-height: 38px;
+    letter-spacing: -0.8px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+}
+
+.pp { /*container for text*/
+	width:90%;
+	margin: auto;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.certificates {
+	width: 100%;
+	background: #00994d;
+	height: 200px;
+	display: flex;
+}
+
+.certificate {
+	width: 33%;
+	align-self: center;
+}
+
+/***** blog *****/
+
+.blogPhoto {
+	width: 50%;
+	background: red;
+	height: 550px;
+	display: flex;
+	flex-wrap: wrap;
+	background: url("/img/travel.jpg") no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.blogLink {
+	width: 50%;
+	height: 550px;
+	background: url("/img/buildings.jpg") no-repeat;
+	display: flex;
+	background-size: cover;
+}
+
+/***** projects *****/
+
+.projects {
+	width: 100%;
+	background: #00994d;
+	height: 200px;
+	display: flex;
+}
+
+/***** order *****/
+
+.header {
+	order: 1;
+}
+
+.introduction {
+	order: 2;
+}
+
+.aboutMe {
+	order: 3;
+}
+
+.myPhoto {
+	order: 4;
+}
+
+.certificates {
+	order: 5;
+}
+
+.blogPhoto {
+	order: 6;
+	background-position: center;
+}
+
+.blogLink {
+	order: 7;
+	background-position: center;
+}
+
+.projects {
+	order: 8
+}
+
+.footer {
+	order: 9;
+}
+
+
+/***** hamburger menu *****/
+
+.menuBurger {
+  display: none;   /* hide hamburger menu */
+}
+
+

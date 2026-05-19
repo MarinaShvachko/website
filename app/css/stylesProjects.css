@@ -1,0 +1,100 @@
+/* TODO: написать в одну строку все, что можно объединить*/
+
+* {
+	margin: 0;
+}
+
+html,
+body {
+  	height: 100%;
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+}
+
+a:hover { 
+    text-decoration: underline;
+}
+
+.container {
+	width: 60%;
+	display: flex;
+	flex-wrap: wrap;
+	margin: auto;
+}
+
+/***** content *****/
+
+.projectWrapper {
+	min-height: calc(100vh - 100px); /*press footer to bottom*/
+	width: 100%;
+}
+
+
+.projectDockerBackground {
+	background: url("../img/docker/docker.png") no-repeat;
+}
+
+.projectJavaBackground {
+	background: url("../img/java/java.png") no-repeat;
+}
+
+.projectApiBackground {
+	background: url("../img/API.png") no-repeat;
+}
+
+.projectJenkinsBackground {
+	background: url("../img/jenkins/Jenkins.png") no-repeat;
+}
+
+.project {      /*container for item*/
+	width: 20%;
+	box-sizing: border-box;
+	border: 1px solid #fff;
+	height: 195px;
+	box-sizing: border-box;
+    background-position: center;
+    /*background-size: cover;*/
+    border-color: #00994d;
+    margin-top: 15px;
+    padding: 1%;
+}
+
+.try {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.projectName {
+	font-family: 'Arial';
+    color: #2c2c2c;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    padding-top: 5%;
+}
+
+.projectNameWithoutLink {
+	font-family: 'Arial';
+    color: #2c2c2c;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    padding-top: 5%;
+}
+
+.source {
+	font-family: 'Arial';
+    color: #2c2c2c;
+    font-size: 14px;
+    line-height: 28px;
+    text-align: center;
+    color: blue;
+}
+
+.projectName:hover {
+	text-decoration: underline;
+}
