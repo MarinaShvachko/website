@@ -86,7 +86,7 @@ h4 {
 	display: flex;
 	width: 30%;
 	height: 500px;
-	background: url("../img/Israel/day1.jpg") no-repeat;
+	background: url("/img/Israel/day1.jpg") no-repeat;
 	background-position: center;
 	background-size: cover;
 }
@@ -96,7 +96,7 @@ h4 {
 	width: 70%;
 	height: 500px;
 	flex-wrap: wrap;
-	background: url("../img/sri2.jpg") no-repeat;
+	background: url("/img/sri2.jpg") no-repeat;
 	background-position: center;
 	background-size: cover;
 }
@@ -105,7 +105,7 @@ h4 {
 	display: flex;
 	width: 50%;
 	height: 250px;
-	background: url("../img/Israel/hotel.jpg") no-repeat;
+	background: url("/img/Israel/hotel.jpg") no-repeat;
 	background-position: center;
 	background-size: cover;
 }
@@ -114,7 +114,7 @@ h4 {
 	display: flex;
 	width: 50%;
 	height: 250px;
-	background: url("../img/Israel/modernDistrics.jpg") no-repeat;
+	background: url("/img/Israel/modernDistrics.jpg") no-repeat;
 	background-position: center;
 	background-size: cover;
 }
@@ -123,7 +123,7 @@ h4 {
 	display: flex;
 	width: 100%;
 	height: 250px;
-	background: url("../img/Israel/oldCity.jpg") no-repeat;
+	background: url("/img/Israel/oldCity.jpg") no-repeat;
 	background-position: center;
 	background-size: cover;
 }
@@ -132,7 +132,7 @@ h4 {
 	display: flex;
 	width: 100%;
 	height: 250px;
-	background: url("../img/Israel/beaches.jpg") no-repeat;
+	background: url("/img/Israel/beaches.jpg") no-repeat;
 	background-position: center;
 	background-size: cover;
 }
@@ -141,7 +141,7 @@ h4 {
 	display: flex;
 	width: 50%;
 	height: 250px;
-	background: url("../img/Israel/streetArt.jpg") no-repeat;
+	background: url("/img/Israel/streetArt.jpg") no-repeat;
 	background-position: center;
 	background-size: cover;
 }
@@ -150,7 +150,7 @@ h4 {
 	display: flex;
 	width: 25%;
 	height: 250px;
-	background: url("../img/Israel/Jerusalem.jpg") no-repeat;
+	background: url("/img/Israel/Jerusalem.jpg") no-repeat;
 	background-position: center;
 	background-size: cover;
 }
@@ -159,7 +159,7 @@ h4 {
 	display: flex;
 	width: 25%;
 	height: 250px;
-	background: url("../img/Israel/Haifa.jpg") no-repeat;
+	background: url("/img/Israel/Haifa.jpg") no-repeat;
 	background-position: center;
 	background-size: cover;
 }
@@ -168,7 +168,7 @@ h4 {
 	display: flex;
 	width: 40%;
 	height: 500px;
-	background: url("../img/Israel/event.jpg") no-repeat;
+	background: url("/img/Israel/event.jpg") no-repeat;
 	background-position: center;
 	background-size: cover;
 }
@@ -177,7 +177,7 @@ h4 {
 	display: flex;
 	width: 60%;
 	height: 500px;
-	background: url("../img/Israel/cat1.jpg") no-repeat;
+	background: url("/img/Israel/cat1.jpg") no-repeat;
 	background-position: center;
 	background-size: cover;
 }

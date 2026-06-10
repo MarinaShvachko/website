@@ -77,9 +77,9 @@ a:hover {
     padding-top: 20px;
 }
 
- .days:active {
-    color: #f00; /* Цвет активной ссылки */ 
-   } 
+.days:active {
+   color: #2c2c2c;
+}
 
 
 

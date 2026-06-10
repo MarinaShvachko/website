@@ -27,7 +27,7 @@ export default function BooksPage() {
         
         <ul className={`menu clearfix ${menuOpen ? 'open' : ''}`}>
           <li><a href="/">Home</a></li>
-          <li><a href="/cv">CV</a></li>
+          {/* <li><a href="/cv">CV</a></li> */}
           <li><a href="/projects">Projects</a></li> 
           <li><a href="/travel">Travel</a></li>
           <li><a href="/books">Books</a></li>

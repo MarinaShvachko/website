@@ -28,6 +28,11 @@ h1 {
     letter-spacing: -1.4px;
 }
 
+.mainQuoteTitle {
+	font-family: serif;
+	font-weight: bold;
+}
+
 h2 {
 	text-transform: uppercase;
     font-weight: bold;

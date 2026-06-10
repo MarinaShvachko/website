@@ -27,7 +27,7 @@ export default function HomePage() {
         {/* The menu styles dynamically transition open and closed */}
         <ul className={`menu clearfix ${menuOpen ? 'open' : ''}`}>
           <li><a href="/">Home</a></li>
-          <li><a href="/cv">CV</a></li>
+          {/* <li><a href="/cv">CV</a></li> */}
           <li><a href="/projects">Projects</a></li> 
           <li><a href="/travel">Travel</a></li>
           <li><a href="/books">Books</a></li>
@@ -39,7 +39,7 @@ export default function HomePage() {
         <div className="lightOverlay">
           <div className="introductionText">
             <div className="mainSlogan">
-              <h1>"The whole purpose of education is to turn mirrors into windows"</h1>
+              <h1 className="mainQuoteTitle">"The whole purpose of education is to turn mirrors into windows"</h1>
             </div>
             <div className="slogan">
               <h2>- Sydney J. Harris</h2>

@@ -159,3 +159,20 @@ ol, li {
 	color: blue;
 	text-decoration: underline;
 }
+
+/* Safely restores numbering ONLY for article list contents, completely bypassing dashboard project cards */
+.projectWrapper p + ol,
+.projectWrapper ol {
+    list-style-type: decimal !important;
+    padding-left: 25px !important;
+    margin: 15px 0 !important;
+}
+
+.projectWrapper p + ol li,
+.projectWrapper ol li {
+    display: list-item !important;
+    list-style-type: decimal !important;
+    margin-bottom: 6px !important;
+    float: none !important; /* Prevents card grid-float rules from hijacking text lines */
+    width: auto !important;  /* Stops full-width card stretching */
+}

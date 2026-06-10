@@ -34,19 +34,19 @@ a:hover {
 
 
 .projectDockerBackground {
-	background: url("../img/docker/docker.png") no-repeat;
+	background: url("/img/docker/docker.png") no-repeat;
 }
 
 .projectJavaBackground {
-	background: url("../img/java/java.png") no-repeat;
+	background: url("/img/java/java.png") no-repeat;
 }
 
 .projectApiBackground {
-	background: url("../img/API.png") no-repeat;
+	background: url("/img/API.png") no-repeat;
 }
 
 .projectJenkinsBackground {
-	background: url("../img/jenkins/Jenkins.png") no-repeat;
+	background: url("/img/jenkins/Jenkins.png") no-repeat;
 }
 
 .project {      /*container for item*/

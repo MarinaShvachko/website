@@ -7,18 +7,20 @@ ul {
 	display: flex;
 }
 
-.header a {
-	padding: 16px;
-	display: block;
-	/*border-right: 1px solid #fff;*/
-	width: auto;
-	text-align: center;
-}
-
 .header {
 	width: 100%;
 	background: #2c2c2c;
 	height: 50px;
+	font-family: initial;
+	line-height: initial;
+}
+
+.header a {
+	padding: 16px;
+	display: block;
+	width: 50px;
+	text-align: center;
+	box-sizing: content-box;
 }
 
 /* Common footer styles */

@@ -16,6 +16,8 @@ a:hover {
 }
 
 h4 {
+    font-family: Times, 'Times New Roman', serif;
+    color: #000;
     text-transform: uppercase;
     font-weight: bold;
     font-size: 21px;
@@ -127,6 +129,7 @@ p {
     .slider__wrapper {
       position: relative;
       overflow: hidden;
+      width: 100%;
     }
 
     /* стили для контейнера слайдов */
@@ -139,22 +142,27 @@ p {
     .slider__item {
       flex: 0 0 100%;
       max-width: 100%;
+      box-sizing: border-box;
     }
 
     /* стили для кнопок "вперед" и "назад" */
     .slider__control {
       position: absolute;
       top: 50%;
+      z-index: 20;
       display: flex;
       align-items: center;
       justify-content: center;
       width: 40px;
+      padding: 0;
+      border: none;
       color: #fff;
       text-align: center;
       opacity: 0.5;
       height: 50px;
       transform: translateY(-50%);
       background: rgba(0, 0, 0, 0.5);
+      cursor: pointer;
     }
 
     .slider__control:hover,
@@ -194,7 +202,7 @@ p {
     .slider__indicators {
       position: absolute;
       right: 0;
-      bottom: 10px;
+      bottom: 15px;
       left: 0;
       z-index: 15;
       display: flex;
@@ -202,9 +210,9 @@ p {
       padding-left: 0;
       margin-right: 15%;
       margin-left: 15%;
-      list-style: none;
       margin-top: 0;
       margin-bottom: 150px;
+      list-style: none;
     }
 
     .slider__indicators li {
@@ -232,67 +240,67 @@ p {
     }
 
     .slider__item_1 {
-      background: url("../img/vietnam/1slide.jpg") center;
+      background: url("/img/vietnam/1slide.jpg") center;
        height: 600px;
        background-size: cover;
     }
 
     .slider__item_2 {
-      background: url("../img/vietnam/2slider.jpg") no-repeat;
+      background: url("/img/vietnam/2slider.jpg") no-repeat;
       height: 600px;
       background-size: cover;
     }
 
     .slider__item_3 {
-      background: url("../img/vietnam/3slide.jpg") center;
+      background: url("/img/vietnam/3slide.jpg") center;
       height: 600px;
       background-size: cover;
     }
 
     .slider__item_4 {
-      background: url("../img/vietnam/4slide.jpg") center;
+      background: url("/img/vietnam/4slide.jpg") center;
        height: 600px;
        background-size: cover;
     }
 
      .slider__item_5 {
-      background: url("../img/vietnam/5slide.jpg") center;
+      background: url("/img/vietnam/5slide.jpg") center;
        height: 600px;
        background-size: cover;
     }
 
     .slider__item_6 {
-      background: url("../img/vietnam/6slide.jpg") center;
+      background: url("/img/vietnam/6slide.jpg") center;
       height: 600px;
       background-size: cover;
     }
 
     .slider__item_7 {
-      background: url("../img/vietnam/7slide.jpg") center;
+      background: url("/img/vietnam/7slide.jpg") center;
       height: 600px;
       background-size: cover;
     }
 
     .slider__item_8 {
-      background: url("../img/vietnam/8slide.jpg") center;
+      background: url("/img/vietnam/8slide.jpg") center;
        height: 600px;
        background-size: cover;
     }
 
     .slider__item_9 {
-      background: url("../img/vietnam/9slide.jpg") center;
+      background: url("/img/vietnam/9slide.jpg") center;
       height: 600px;
       background-size: cover;
     }
 
     .slider__item_10 {
-      background: url("../img/vietnam/10slide.jpg") center;
+      background: url("/img/vietnam/10slide.jpg") center;
        height: 600px;
        background-size: cover;
     }
 
     .slider__item_11 {
-      background: url("../img/vietnam/11slide.jpg") center;
+      background: url("/img/vietnam/11slide.jpg") center;
        height: 600px;
        background-size: cover;
     }

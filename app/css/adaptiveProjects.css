@@ -116,4 +116,10 @@
     margin-top: 9px;
   }
 
+  .menu.open {
+    display: flex !important;
+    top: 50px; /* Aligns the dropdown neatly under your 50px header bar */
+    height: auto;
+  }
+
 }

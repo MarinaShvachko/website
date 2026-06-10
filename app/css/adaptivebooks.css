@@ -8,10 +8,6 @@
     display: flex;
     flex-wrap: wrap;
   }
-
-      .footer {
-          width: 80%;
-      }
 }
 
 @media screen and (max-width: 960px) {
@@ -21,9 +17,6 @@
 		display: flex;
 		flex-wrap: wrap;
 	}
-    .footer {
-        width: 90%;
-    }
 }
 
 @media screen and (max-width: 800px) {
@@ -37,9 +30,6 @@
 		display: flex;
 		flex-wrap: wrap;
 	}
-    .footer {
-        width: 90%;
-    }
 }
 
 @media screen and (max-width: 600px) {
@@ -180,8 +170,4 @@
     order: 2;
     outline: none;
   }
-
-      .footer {
-          width: 100%;
-      }
 }
