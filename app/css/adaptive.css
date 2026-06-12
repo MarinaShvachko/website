@@ -1,0 +1,178 @@
+/* TODO: написать в одну строку все, что можно объединить*/
+
+@media screen and (max-width: 1366px) {
+	.container {
+		width:70%;
+	}
+
+	.aboutMe {
+		width: 50%;
+		height: 350px;
+	}
+
+	.myPhoto {
+		width: 50%;
+		height: 350px;
+	}
+
+	.certificateTitle {
+    font-size: 18px;
+    line-height: 30px;
+	}
+
+	.certificates, .box42 {
+		height: 150px;
+	}
+
+	.blogPhoto, .blogLink {
+		width: 50%;
+		height: 350px;
+	}
+}
+
+@media screen and (max-width: 1160px) {
+	p {
+    font-size: 16px;
+	}
+}
+
+
+@media screen and (max-width: 959px) {
+	.container {
+		width:80%;
+	}
+
+	h1 {
+		font-size: 35px;
+	}
+
+	h2 {
+		font-size: 20px;
+	}
+
+	.introduction {
+		height: 350px;
+	}
+
+	.aboutMe {
+		width: 100%;
+		height: 300px;
+		order: 4;
+	}
+
+	.myPhoto {
+		width: 100%;
+		height: 300px;
+		order: 3;
+	}
+
+	.certificateTitle {
+    font-size: 16px;
+    line-height: 25px;
+	}
+
+	.blogPhoto, .blogLink {
+		width: 50%;
+		height: 250px;
+	}
+
+	.certificates, .projects {
+		height: 100px;
+	}
+
+	p {
+        font-size: 14px;
+	}
+}
+
+@media screen and (max-width: 649px) {
+	.container {
+		width:90%;
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	p {
+    	font-size: 16px;
+	}
+
+	.header a {
+		border-right: 0;
+	}
+
+	h1 {
+	    font-size: 24px;
+	    line-height: 45px;
+	}
+
+	h2 {
+    	font-size: 14px;
+	}
+
+	.certificateTitle {
+	    font-size: 12px;
+	    line-height: 20px;
+	}
+
+	.introduction, .aboutMe, .myPhoto, .blogPhoto, .blogLink {
+		width: 100%;
+		height: 300px;
+	}
+
+	.certificates, .projects {
+		height: 100px;
+	}
+
+	.footer {
+		height: 50px;
+	}
+
+	.myPhoto {
+		order: 3;
+	}
+
+	.aboutMe {
+		order: 4;
+	}
+
+	.blogPhoto {
+		background-position: center left;
+	}
+}
+
+@media screen and (max-width: 450px) {
+  .menu {
+    display: none; /* hide menu items */
+    background: #2c2c2c;
+    position: absolute;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+  }
+
+  /*.menu li {
+    float: none;
+  }*/
+
+  .menuBurger {
+    display: block; /* иконка гамбургер видна */
+    padding-left: 20px;
+    padding-top: 9px;
+    z-index: 100;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  p {
+    font-size: 15px;
+  }
+
+  .menu.open {
+    display: flex !important;
+    top: 50px; /* Positions the dropdown right underneath your 50px tall header bar */
+    height: auto;
+  }
+}

@@ -1,65 +1,117 @@
-import Image from "next/image";
+// app/page.tsx
+"use client";
 
-export default function Home() {
+import { useState } from 'react';
+import './css/adaptive.css';
+
+export default function HomePage() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+    <div className="container">
+      {/* HEADER & NAVIGATION */}
+      <header className="header">
+        <div className="menuBurger" onClick={() => setMenuOpen(!menuOpen)}>
+          <svg width="32" height="32" xmlns="http://www.w3.org/2000/svg">
+            <g>
+              <title>background</title>
+              <rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1" />
+            </g>
+            <g>
+              <title>Layer 1</title>
+              <path fill="#049900" id="svg_1" d="m4,10l24,0c1.104,0 2,-0.896 2,-2s-0.896,-2 -2,-2l-24,0c-1.104,0 -2,0.896 -2,2s0.896,2 2,2zm24,4l-24,0c-1.104,0 -2,0.896 -2,2s0.896,2 2,2l24,0c1.104,0 2,-0.896 2,-2s-0.896,-2 -2,-2zm0,8l-24,0c-1.104,0 -2,0.896 -2,2s0.896,2 2,2l24,0c1.104,0 2,-0.896 2,-2s-0.896,-2 -2,-2z" />
+            </g>
+          </svg>
+        </div>
+        
+        {/* The menu styles dynamically transition open and closed */}
+        <ul className={`menu clearfix ${menuOpen ? 'open' : ''}`}>
+          <li><a href="/">Home</a></li>
+          {/* <li><a href="/cv">CV</a></li> */}
+          <li><a href="/projects">Projects</a></li> 
+          <li><a href="/travel">Travel</a></li>
+          <li><a href="/books">Books</a></li>
+        </ul>
+      </header>
+
+      {/* INTRODUCTION HERO BANNER */}
+      <div className="introduction">
+        <div className="lightOverlay">
+          <div className="introductionText">
+            <div className="mainSlogan">
+              <h1 className="mainQuoteTitle">"The whole purpose of education is to turn mirrors into windows"</h1>
+            </div>
+            <div className="slogan">
+              <h2>- Sydney J. Harris</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* ABOUT ME BIOGRAPHY SECTION */}
+      <div className="aboutMe">
+        <div className="overlay">
+          <div className="pp">
+            <p>I have been working as a Quality Assurance Engineer since October 2017. At first I used to test different websites. Biggest part of that work was checking of UI. Then, I moved to another company and did functional and integrational testing of a web application and a CRM system. Now I work as AQA and enjoy continuous learning of programming and QA skills. This site is my small hobby. I'm doing it for my amusement, practicing English and CSS/HTML skills.</p>
+          </div>
+        </div>
+      </div>
+
+      {/* VERTICAL COLUMN PHOTOS */}
+      <div className="myPhoto"></div>
+
+      {/* CERTIFICATES SECTION */}
+      <div className="certificates">
+        <div className="pp">
+          <div className="certificate">
+            <p className="certificateTitle">
+              <a href="http://scr.istqb.org/?name=Marina&number=79501&orderBy=relevancy&orderDirection=&dateStart=&dateEnd=&expiryStart=&expiryEnd=&certificationBody=&examProvider=&certificationLevel=&country=" target="_blank" rel="noopener noreferrer">ISTQB</a>
+            </p>
+          </div>
+          <div className="certificate">
+            <p className="certificateTitle">
+              <a href="/img/FEND.pdf" target="_blank" rel="noopener noreferrer">Front - end Web Developer Nanodegree</a>
+            </p>
+          </div>
+          <div className="certificate">
+            <p className="certificateTitle">
+              <a href="/img/IELTS.jpg" target="_blank" rel="noopener noreferrer">IELTS</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {/* MIDDLE VERTICAL PHOTO BAR */}
+      <div className="blogPhoto"></div>
+
+      {/* FOOTER BLOG SECTION */}
+      <div className="blogLink">
+        <div className="overlay">
+           <div className="pp">
+                <p>
+                    <a href="/books">Books I have read on QA and other topics. Not all, but these, that worth to read in my opinion. Some of them provided knowledge only about testing, some describe wider concepts. All in all, it helps to improve quality of product, different skills and brings pleasure while reading.</a>
+                </p>
+            </div>
+        </div>
+      </div>
+
+      {/* PORTFOLIO PROJECTS SECTION */}
+      <div className="projects">
+        <div className="pp">
+          <a href="/projects">
+            <p className="certificateTitle">Different projects I have done for practicing development, tester and english skills.</p>
+          </a>
+        </div>
+      </div>
+
+      {/* FOOTER BAR */}
+      <footer className="footer">
+        <div className="copirait">
+          <p className="footerText">
+            © {new Date().getFullYear()} Marina Shvachko. All rights reserved.
           </p>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
+      </footer>
     </div>
   );
 }

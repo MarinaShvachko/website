@@ -1,0 +1,173 @@
+/* TODO: написать в одну строку все, что можно объединить*/
+
+
+@media screen and (max-width: 1460px) {
+
+  .container {
+    width:80%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 960px) {
+
+	.container {
+		width:90%;
+		display: flex;
+		flex-wrap: wrap;
+	}
+}
+
+@media screen and (max-width: 800px) {
+
+  p {
+  font-size: 15px;
+  }
+
+  .container {
+		width:90%;
+		display: flex;
+		flex-wrap: wrap;
+	}
+}
+
+@media screen and (max-width: 600px) {
+
+  .book {
+    border-bottom: none;
+  }
+
+  .bookPhotoLeft1 {
+  width: 100%;
+  outline: none;
+  height: 200px;
+  background-position: center;
+  }
+
+  .bookDescriptionRight1 {
+  width: 100%;
+  outline: none;
+  border-bottom: none;
+  }
+
+  .bookPhotoRight2 {
+  width: 100%;
+  outline: none;
+  height: 200px;
+  order: 1;
+  background-position: center;
+  }
+
+  .bookDescriptionLeft2 {
+  width: 100%;
+  outline: none;
+  order: 2;
+  }
+
+  .container {
+		width:90%;
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+  h4 {
+  font-size: 18px;
+  line-height: 30px;
+  }
+}
+
+@media screen and (max-width: 491px) {
+  p {
+  font-size: 13px;
+  }
+
+  .book {
+    border-bottom: none;
+  }
+
+  .bookPhotoLeft1 {
+    height: 200px;
+    background-position: center;
+  }
+
+  .bookDescriptionRight1 {
+    width: 100%;
+    outline: none;
+    border-bottom: none;
+  }
+
+  .bookPhotoRight2 {
+    height: 200px;
+    order: 1;
+    background-position: center;
+  }
+
+  .bookDescriptionLeft2 {
+    order: 2;
+    outline: none;
+  }
+}
+
+/***** hamburger menu *****/
+  .menuBurger {
+  display: none;   /* hide hamburger menu */
+}
+
+@media screen and (max-width: 450px) {
+
+   p {
+  font-size: 10px;
+  } 
+ 
+  .menu {
+    display: none; /* hide menu items */
+    background: #2c2c2c;
+    position: absolute;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+  }
+
+  .menuBurger {
+    display: block; /* иконка гамбургер видна */
+    padding-left: 20px;
+    padding-top: 9px;
+  }
+
+     .container {
+    width: 100%;
+  }
+
+  .projectWrapper {
+    width: 95%;
+    margin: auto;
+  }
+
+  .book {
+    border-bottom: none;
+  }
+
+  .bookPhotoLeft1 {
+    height: 200px;
+    background-position: center;
+  }
+
+  .bookDescriptionRight1 {
+    width: 100%;
+    outline: none;
+    border-bottom: none;
+  }
+
+  .bookPhotoRight2 {
+    height: 200px;
+    order: 1;
+    background-position: center;
+  }
+
+  .bookDescriptionLeft2 {
+    order: 2;
+    outline: none;
+  }
+}
