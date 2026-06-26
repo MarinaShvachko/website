@@ -1,8 +1,8 @@
 "use client";
 
-import { useState } from 'react';
-import SiteHeader from '@/app/components/SiteHeader';
-import SiteFooter from '@/app/components/SiteFooter';
+import { useState } from "react";
+import SiteHeader from "@/app/components/SiteHeader";
+import SiteFooter from "@/app/components/SiteFooter";
 import "../../css/common.css";
 import "../../css/stylesTurkey.css";
 
@@ -19,10 +19,24 @@ export default function ItalyPage() {
       <SiteHeader />
 
       <div className="storyFromVacation">
-        <a className="days" href="#" onClick={(event) => { event.preventDefault(); setSelectedStory("rome"); }}>
+        <a
+          className="days"
+          href="#"
+          onClick={(event) => {
+            event.preventDefault();
+            setSelectedStory("rome");
+          }}
+        >
           The worst place for my feet and the best place for my soul - Rome
         </a>
-        <a className="days" href="#" onClick={(event) => { event.preventDefault(); setSelectedStory("florence"); }}>
+        <a
+          className="days"
+          href="#"
+          onClick={(event) => {
+            event.preventDefault();
+            setSelectedStory("florence");
+          }}
+        >
           2 days in Florence.
         </a>
       </div>
@@ -31,7 +45,9 @@ export default function ItalyPage() {
         <div
           id="div_for_insert"
           dangerouslySetInnerHTML={{
-            __html: selectedStory ? stories[selectedStory] : "<p>Choose the topic</p>",
+            __html: selectedStory
+              ? stories[selectedStory]
+              : "<p>Choose the topic</p>",
           }}
         />
       </div>

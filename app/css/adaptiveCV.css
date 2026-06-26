@@ -1,103 +1,100 @@
 @media screen and (max-width: 1459px) {
-
-	.container {
+  .container {
     width: 80%;
-	}
+  }
 
-	h2 {
-	font-size: 23px;
-	}
+  h2 {
+    font-size: 23px;
+  }
 
-	h3 {
-	font-size: 20px;
-	}
+  h3 {
+    font-size: 20px;
+  }
 
-	p {
-	font-size: 16px;
-	}
+  p {
+    font-size: 16px;
+  }
 
-    .footer {
-        width: 80%;
-    }
+  .footer {
+    width: 80%;
+  }
 }
 
 @media screen and (max-width: 959px) {
-
-	.container {
+  .container {
     width: 90%;
-	}
+  }
 
-	h2 {
-	font-size: 21px;
-	}
+  h2 {
+    font-size: 21px;
+  }
 
-	h3 {
-	font-size: 18px;
-	}
+  h3 {
+    font-size: 18px;
+  }
 
-	p {
-	font-size: 16px;
-	}
+  p {
+    font-size: 16px;
+  }
 
-    .footer {
-        width: 90%;
-    }
+  .footer {
+    width: 90%;
+  }
 }
 
 @media screen and (max-width: 767px) {
+  .container {
+    width: 90%;
+  }
 
-	.container {
-		width: 90%;
-	}
-
-	.header {
+  .header {
     width: 100%;
     order: 1;
-	}
+  }
 
-.contactInfoContainer {
-	margin: auto;
-	}
+  .contactInfoContainer {
+    margin: auto;
+  }
 
-	.contactInfo {
+  .contactInfo {
     width: 100%;
     order: 2;
     min-height: calc(100vh - 300px);
-	}
+  }
 
-h2 {
-	font-size: 20px;
-	}
+  h2 {
+    font-size: 20px;
+  }
 
-h3 {
-	font-size: 16px;
-	}
+  h3 {
+    font-size: 16px;
+  }
 
-.contactInfo {
-	border-left: 10px solid #00af58;
-	}
+  .contactInfo {
+    border-left: 10px solid #00af58;
+  }
 
-	.skills {
+  .skills {
     width: 100%;
     order: 3;
-	}
+  }
 
-.footer {
+  .footer {
     width: 90%;
     order: 4;
-	}
+  }
 }
 
 @media screen and (max-width: 649px) {
-	.container {
-		width:90%;
-	}
+  .container {
+    width: 90%;
+  }
 }
 
 /***** hamburger menu *****/
 
 .menuBurger {
-  display: none;   /* hide hamburger menu */
+  display: none; /* hide hamburger menu */
 }
 
 @media screen and (max-width: 450px) {
@@ -117,11 +114,11 @@ h3 {
     padding-top: 9px;
   }
 
-    .container {
-        width: 100%;
-    }
+  .container {
+    width: 100%;
+  }
 
-    .footer {
-        width: 100%;
-    }
+  .footer {
+    width: 100%;
+  }
 }

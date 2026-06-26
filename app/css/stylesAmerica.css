@@ -1,208 +1,200 @@
 * {
-	margin: 0;
+  margin: 0;
 }
 
 html,
 body {
-  	height: 100%;
+  height: 100%;
 }
 
 a {
-	text-decoration: none;
-	color: #fff;
+  text-decoration: none;
+  color: #fff;
 }
 
-a:hover { 
-    text-decoration: underline;
+a:hover {
+  text-decoration: underline;
 }
 
 h4 {
-	text-transform: uppercase;
-    font-weight: bold;
-    font-size: 21px;
-    line-height: 42px;
-    letter-spacing: -1px;
-    padding-top: 20px;
-    padding-bottom: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 42px;
+  letter-spacing: -1px;
+  padding-top: 20px;
+  padding-bottom: 10px;
 }
 
 p {
-	font-family: 'Arial';
-	color: #333;
-    font-size: 20px;
-    line-height: 24px;
-    margin-bottom: 24px;
+  font-family: "Arial";
+  color: #333;
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 24px;
 }
 
 .container {
-	width: 60%;
-	display: flex;
-	flex-wrap: wrap;
-	margin: auto;
+  width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
 }
 
 /***** content *****/
 
 .projectWrapper {
-	min-height: calc(100vh - 100px); /*press footer to bottom*/
-	width: 100%;
-	display: flex;
-	flex-wrap: wrap;
-    margin: auto;
+  min-height: calc(100vh - 100px); /*press footer to bottom*/
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
 }
 
-.project {      /*container for item*/
-	width: 20%;
-	box-sizing: border-box;
-	border: 1px solid #fff;
-	height: 100px;
+.project {
+  /*container for item*/
+  width: 20%;
+  box-sizing: border-box;
+  border: 1px solid #fff;
+  height: 100px;
 }
 
 .contentSection {
-	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 .projectName {
-	font-family: 'Arial';
-    color: #2c2c2c;
-    font-size: 20px;
-    line-height: 28px;
-    text-align: center;
-    padding-top: 30px;
+  font-family: "Arial";
+  color: #2c2c2c;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  padding-top: 30px;
 }
 
 .source {
-	font-family: 'Arial';
-    color: #2c2c2c;
-    font-size: 10px;
-    line-height: 28px;
-    text-align: center;
-    color: blue;
+  font-family: "Arial";
+  color: #2c2c2c;
+  font-size: 10px;
+  line-height: 28px;
+  text-align: center;
+  color: blue;
 }
 
 .projectName:hover {
-	text-decoration: underline;
+  text-decoration: underline;
 }
 
-
 .imgInText {
-	width: 99%;
+  width: 99%;
 }
 
 .fullImgInText {
-	width: 50%;
+  width: 50%;
 }
 
 .photoContainer {
-	display: flex;
-	flex-wrap: wrap;
-	width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
 .photoInText {
-	width: 50%;
+  width: 50%;
 }
 .introduction {
-	display: flex;
-	width: 30%;
-	height: 500px;
-	/*background: url("../img/sri2.jpg") no-repeat;*/
-	background-position: center;
-	background-size: cover;
+  display: flex;
+  width: 30%;
+  height: 500px;
+  /*background: url("../img/sri2.jpg") no-repeat;*/
+  background-position: center;
+  background-size: cover;
 }
 .introduction1 {
-	display: flex;
-	width: 70%;
-	height: 500px;
-	flex-wrap: wrap;
-	/*background: url("../img/sri2.jpg") no-repeat;
+  display: flex;
+  width: 70%;
+  height: 500px;
+  flex-wrap: wrap;
+  /*background: url("../img/sri2.jpg") no-repeat;
 	background-position: center;
 	background-size: cover;*/
 }
 
 .introduction12 {
-	display: flex;
-	width: 40%;
-	height: 500px;
-	flex-wrap: wrap;
-	/*background: url("../img/sri2.jpg") no-repeat;
+  display: flex;
+  width: 40%;
+  height: 500px;
+  flex-wrap: wrap;
+  /*background: url("../img/sri2.jpg") no-repeat;
 	background-position: center;
 	background-size: cover;*/
 }
 
 .introduction2 {
-	display: flex;
-	width: 25%;
-	height: 250px;
-	background: url("../img/sri2.jpg") no-repeat;
-	background-position: center;
-	background-size: cover;
+  display: flex;
+  width: 25%;
+  height: 250px;
+  background: url("../img/sri2.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .introduction3 {
-	display: flex;
-	width: 40%;
-	height: 500px;
-	background: url("../img/sri2.jpg") no-repeat;
-	background-position: center;
-	background-size: cover;
+  display: flex;
+  width: 40%;
+  height: 500px;
+  background: url("../img/sri2.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .introduction4 {
-	display: flex;
-	width: 60%;
-	height: 500px;
-	background: url("../img/sri2.jpg") no-repeat;
-	background-position: center;
-	background-size: cover;
+  display: flex;
+  width: 60%;
+  height: 500px;
+  background: url("../img/sri2.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .introductionT {
-	display: flex;
-	width: 50%;
-	height: 250px;
-	background: url("../img/sri2.jpg") no-repeat;
-	background-position: center;
-	background-size: cover;
+  display: flex;
+  width: 50%;
+  height: 250px;
+  background: url("../img/sri2.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .introductionTL {
-	display: flex;
-	width: 50%;
-	height: 250px;
-	background: url("../img/sri2.jpg") no-repeat;
-	background-position: center;
-	background-size: cover;
+  display: flex;
+  width: 50%;
+  height: 250px;
+  background: url("../img/sri2.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .introductionL {
-	display: flex;
-	width: 100%;
-	height: 250px;
-	background: url("../img/sri2.jpg") no-repeat;
-	background-position: center;
-	background-size: cover;
+  display: flex;
+  width: 100%;
+  height: 250px;
+  background: url("../img/sri2.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .introductionL2 {
-	display: flex;
-	width: 25%;
-	height: 250px;
-	background: url("../img/sri2.jpg") no-repeat;
-	background-position: center;
-	background-size: cover;
+  display: flex;
+  width: 25%;
+  height: 250px;
+  background: url("../img/sri2.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .ccc {
-	display: flex;
-	flex-wrap: wrap;
-	width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
 }
-
-
-
-
-
-
-
-

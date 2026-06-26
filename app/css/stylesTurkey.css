@@ -1,10 +1,10 @@
 * {
-	margin: 0;
+  margin: 0;
 }
 
 html,
 body {
-  	height: 100%;
+  height: 100%;
 }
 
 /*h2 {
@@ -18,11 +18,11 @@ body {
 } */
 
 p {
-	font-family: 'Arial';
-    color: #2c2c2c;
-    font-size: 20px;
-    line-height: 28px;
-    margin-bottom: 24px;
+  font-family: "Arial";
+  color: #2c2c2c;
+  font-size: 20px;
+  line-height: 28px;
+  margin-bottom: 24px;
 }
 /*
 h3 {
@@ -36,100 +36,94 @@ h3 {
 /***** Header *****/
 
 a {
-	text-decoration: none; /* color of menu */
-	color: #fff;
+  text-decoration: none; /* color of menu */
+  color: #fff;
 }
 
-a:hover { 
-    text-decoration: underline;
+a:hover {
+  text-decoration: underline;
 }
 
 .container {
-	width: 60%;
-	display: flex;
-	flex-wrap: wrap;
-	margin: auto;
+  width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
 }
 
 .header {
-	width: 100%;
-	background: #2c2c2c;
-	height: 50px;
-	order: 1;
+  width: 100%;
+  background: #2c2c2c;
+  height: 50px;
+  order: 1;
 }
 
 /***** Names of stories from vacation *****/
 
 .storyFromVacation {
-	width: 30%;
-	min-height: calc(100vh - 100px);
-	order: 2;
+  width: 30%;
+  min-height: calc(100vh - 100px);
+  order: 2;
 }
 
 .days {
-	font-family: 'Arial';
-    color: #2c2c2c;
-    font-size: 20px;
-    line-height: 28px;
-    display: block;
-    padding-top: 20px;
+  font-family: "Arial";
+  color: #2c2c2c;
+  font-size: 20px;
+  line-height: 28px;
+  display: block;
+  padding-top: 20px;
 }
 
 .days:active {
-   color: #2c2c2c;
+  color: #2c2c2c;
 }
-
-
-
 
 /***** Content of stories *****/
 
 .storyContent {
-    width: 70%;
-    min-height: calc(100vh - 100px);
-    box-sizing: border-box;
-    border-left: 10px solid #00af58;
-    order: 3;
+  width: 70%;
+  min-height: calc(100vh - 100px);
+  box-sizing: border-box;
+  border-left: 10px solid #00af58;
+  order: 3;
 }
-
-
 
 #div_for_insert {
-	font-family: 'Arial';
-    color: #2c2c2c;
-    font-size: 20px;
-    line-height: 28px;
-    padding-top: 20px;
-    padding-left: 20px;
+  font-family: "Arial";
+  color: #2c2c2c;
+  font-size: 20px;
+  line-height: 28px;
+  padding-top: 20px;
+  padding-left: 20px;
 }
 
-
 .imgInText {
-	width: 50%;
-	margin: auto;
+  width: 50%;
+  margin: auto;
 }
 
 /* this is a container for adaptive photos 2 in a row*/
-.photoContainer { 
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
+.photoContainer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
 .photoInText {
-    width: 50%;
+  width: 50%;
 }
 
-.imgInText2 { 
-    width: 99%; 
-    margin: auto;
+.imgInText2 {
+  width: 99%;
+  margin: auto;
 }
 
 /* display photo on the full width of the block*/
 
-.imgInText3 { 
-    width: 99%; 
-    margin: auto;
+.imgInText3 {
+  width: 99%;
+  margin: auto;
 }
 
 /***** footer *****/
@@ -144,16 +138,15 @@ a:hover {
 }**/
 
 @media screen and (max-width: 1459px) {
+  .container {
+    width: 80%;
+  }
 
-    .container {
-        width: 80%;
-	}
+  .footer {
+    width: 80%;
+  }
 
-	.footer {
-        width: 80%;
-    }
-
-	/*h2 {
+  /*h2 {
 	font-size: 30px;
 	}
 
@@ -169,29 +162,29 @@ a:hover {
 /***** hamburger menu *****/
 
 .menuBurger {
-  display: none;   /* hide hamburger menu */
+  display: none; /* hide hamburger menu */
 }
 
 @media screen and (max-width: 699px) {
-    .storyFromVacation {
-        width: 100%;
-        min-height: calc(40vh - 99px);
-        order: 2;
-    }
+  .storyFromVacation {
+    width: 100%;
+    min-height: calc(40vh - 99px);
+    order: 2;
+  }
 
-    .storyContent {
-        width: 100%;
-        min-height: calc(100vh - 100px);
-        order: 3;
-    }
+  .storyContent {
+    width: 100%;
+    min-height: calc(100vh - 100px);
+    order: 3;
+  }
 
-    .container {
-        width:90%;
-    }
+  .container {
+    width: 90%;
+  }
 
-    .footer {
-    	width: 90%;
-    }
+  .footer {
+    width: 90%;
+  }
 }
 
 @media screen and (max-width: 450px) {
@@ -224,7 +217,7 @@ a:hover {
     margin: auto;
   }
 
-    .footer {
-      	width: 100%;
-    }
+  .footer {
+    width: 100%;
+  }
 }

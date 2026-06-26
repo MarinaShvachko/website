@@ -1,8 +1,8 @@
 "use client";
 
-import { useState } from 'react';
-import SiteHeader from '@/app/components/SiteHeader';
-import SiteFooter from '@/app/components/SiteFooter';
+import { useState } from "react";
+import SiteHeader from "@/app/components/SiteHeader";
+import SiteFooter from "@/app/components/SiteFooter";
 import "../../css/common.css";
 import "../../css/stylesTurkey.css";
 
@@ -22,19 +22,54 @@ export default function VacationPage() {
       <SiteHeader />
 
       <div className="storyFromVacation">
-        <a className="days" href="#" onClick={(event) => { event.preventDefault(); setSelectedStory("aboutVacation"); }}>
+        <a
+          className="days"
+          href="#"
+          onClick={(event) => {
+            event.preventDefault();
+            setSelectedStory("aboutVacation");
+          }}
+        >
           My vacations in Europe
         </a>
-        <a className="days" href="#" onClick={(event) => { event.preventDefault(); setSelectedStory("day1"); }}>
+        <a
+          className="days"
+          href="#"
+          onClick={(event) => {
+            event.preventDefault();
+            setSelectedStory("day1");
+          }}
+        >
           Part 1 or the day of sandwiches
         </a>
-        <a className="days" href="#" onClick={(event) => { event.preventDefault(); setSelectedStory("budapest"); }}>
+        <a
+          className="days"
+          href="#"
+          onClick={(event) => {
+            event.preventDefault();
+            setSelectedStory("budapest");
+          }}
+        >
           Part 2 - Budapest
         </a>
-        <a className="days" href="#" onClick={(event) => { event.preventDefault(); setSelectedStory("prague"); }}>
+        <a
+          className="days"
+          href="#"
+          onClick={(event) => {
+            event.preventDefault();
+            setSelectedStory("prague");
+          }}
+        >
           Part 3 - Prague
         </a>
-        <a className="days" href="#" onClick={(event) => { event.preventDefault(); setSelectedStory("vienna"); }}>
+        <a
+          className="days"
+          href="#"
+          onClick={(event) => {
+            event.preventDefault();
+            setSelectedStory("vienna");
+          }}
+        >
           Part 4 - Vienna
         </a>
       </div>
@@ -43,7 +78,9 @@ export default function VacationPage() {
         <div
           id="div_for_insert"
           dangerouslySetInnerHTML={{
-            __html: selectedStory ? stories[selectedStory] : "<p>Choose the topic</p>",
+            __html: selectedStory
+              ? stories[selectedStory]
+              : "<p>Choose the topic</p>",
           }}
         />
       </div>

@@ -1,13 +1,13 @@
 // app/travel/vietnam/page.tsx
 "use client";
 
-import { useEffect } from 'react';
-import SiteHeader from '@/app/components/SiteHeader';
-import SiteFooter from '@/app/components/SiteFooter';
-import '../../css/common.css';
-import '../../css/vietnamStylesSimplePage.css';
-import '../../css/adaptiveStylesSimplePage.css';
-import { bindVietnamSliderListeners, syncVietnamSlider } from './vietnamSlider';
+import { useEffect } from "react";
+import SiteHeader from "@/app/components/SiteHeader";
+import SiteFooter from "@/app/components/SiteFooter";
+import "../../css/common.css";
+import "../../css/vietnamStylesSimplePage.css";
+import "../../css/adaptiveStylesSimplePage.css";
+import { bindVietnamSliderListeners, syncVietnamSlider } from "./vietnamSlider";
 
 const TOTAL_SLIDES = 11;
 
@@ -47,7 +47,8 @@ function VietnamSlider() {
             <div className="slider__item_inner">
               <a href="/travel/vietnam/day3">
                 <span className="slider__item_title">
-                  3 day: The walking trip to Long Sơn through a not touristic area
+                  3 day: The walking trip to Long Sơn through a not touristic
+                  area
                 </span>
               </a>
             </div>
@@ -66,9 +67,7 @@ function VietnamSlider() {
           <div className="slider__item slider__item_5">
             <div className="slider__item_inner">
               <a href="/travel/vietnam/day5">
-                <span className="slider__item_title">
-                  5 day: Pho Bo soup
-                </span>
+                <span className="slider__item_title">5 day: Pho Bo soup</span>
               </a>
             </div>
           </div>
@@ -87,7 +86,8 @@ function VietnamSlider() {
             <div className="slider__item_inner">
               <a href="/travel/vietnam/day7">
                 <span className="slider__item_title">
-                  7 day: THE DAY OF OVEREATING. Our visit to a cafe with a fixed price.
+                  7 day: THE DAY OF OVEREATING. Our visit to a cafe with a fixed
+                  price.
                 </span>
               </a>
             </div>
@@ -135,15 +135,25 @@ function VietnamSlider() {
         </div>
       </div>
 
-      <a className="slider__control slider__control_prev" href="#" role="button" aria-label="Previous slide" />
-      <a className="slider__control slider__control_next" href="#" role="button" aria-label="Next slide" />
+      <a
+        className="slider__control slider__control_prev"
+        href="#"
+        role="button"
+        aria-label="Previous slide"
+      />
+      <a
+        className="slider__control slider__control_next"
+        href="#"
+        role="button"
+        aria-label="Next slide"
+      />
 
       <ol className="slider__indicators">
         {Array.from({ length: TOTAL_SLIDES }).map((_, index) => (
           <li
             key={index}
             data-slide-to={index}
-            className={index === 0 ? 'active' : undefined}
+            className={index === 0 ? "active" : undefined}
             aria-label={`Go to slide ${index + 1}`}
           />
         ))}
@@ -157,7 +167,7 @@ export default function VietnamPage() {
     <div className="container">
       <SiteHeader />
 
-      <div className="projectWrapper" style={{ order: 2, width: '100%' }}>
+      <div className="projectWrapper" style={{ order: 2, width: "100%" }}>
         <div className="containerForSlider">
           <h4>New Year 2020 in Vietnam</h4>
 
@@ -167,7 +177,7 @@ export default function VietnamPage() {
         </div>
       </div>
 
-      <SiteFooter style={{ order: 3, width: '100%' }} />
+      <SiteFooter style={{ order: 3, width: "100%" }} />
     </div>
   );
 }

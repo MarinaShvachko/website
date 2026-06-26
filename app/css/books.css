@@ -1,101 +1,101 @@
 * {
-	margin: 0;
+  margin: 0;
 }
 
 html,
 body {
-  	height: 100%;
+  height: 100%;
 }
 
 a {
-	text-decoration: none;
-	color: #fff;
+  text-decoration: none;
+  color: #fff;
 }
 
-a:hover { 
-    text-decoration: underline;
+a:hover {
+  text-decoration: underline;
 }
 
 h4 {
-	text-transform: uppercase;
-    font-weight: bold;
-    font-size: 21px;
-    line-height: 42px;
-    letter-spacing: 0px;
-    padding-top: 20px;
-    padding-bottom: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 42px;
+  letter-spacing: 0px;
+  padding-top: 20px;
+  padding-bottom: 10px;
 }
 
 p {
-	font-family: 'Arial';
-    color: #333;
-    font-size: 20px;
-    line-height: 24px;
-    margin-bottom: 24px;
-    margin-top: 24px;
-    margin-left: 24px;
-    margin-right: 24px;
+  font-family: "Arial";
+  color: #333;
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 24px;
+  margin-top: 24px;
+  margin-left: 24px;
+  margin-right: 24px;
 }
 
 .container {
-	width: 60%;
-	display: flex;
-	flex-wrap: wrap;
-	margin: auto;
+  width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
 }
 
 /***** content *****/
 
 .projectWrapper {
-	min-height: calc(100vh - 100px); /*press footer to bottom*/
-	width: 100%;
+  min-height: calc(100vh - 100px); /*press footer to bottom*/
+  width: 100%;
 }
 
 .containerBooks {
-	width: 100%;
-	min-height: calc(100vh - 100px);
+  width: 100%;
+  min-height: calc(100vh - 100px);
 }
 
 .book {
-	width: 100%;
-	height: 100%;
-	display: flex;
-	flex-wrap: wrap;
-	/*border-bottom: outset;*/
-	margin-bottom: 30px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  /*border-bottom: outset;*/
+  margin-bottom: 30px;
 }
 
 .bookDescriptionLeft2 {
-	width: 83%;
-	margin-bottom: 5px;
-	text-align: justify;
+  width: 83%;
+  margin-bottom: 5px;
+  text-align: justify;
 }
 
 .bookPhotoLeft1 {
-	width: 17%;
-	background: url(/img/books/Dot_Com.jpeg) no-repeat;
-    background-size: contain;
+  width: 17%;
+  background: url(/img/books/Dot_Com.jpeg) no-repeat;
+  background-size: contain;
 }
 .bookDescriptionRight1 {
-	width: 83%;
-	margin-bottom: 5px;
-	text-align: justify;
+  width: 83%;
+  margin-bottom: 5px;
+  text-align: justify;
 }
 
 .bookPhotoRight2 {
-    width: 16%;
-    background: url(/img/books/LeeCopeland.jpg) no-repeat;
-    background-position: right;
-    background-size: contain;
+  width: 16%;
+  background: url(/img/books/LeeCopeland.jpg) no-repeat;
+  background-position: right;
+  background-size: contain;
 }
 
 /* Next.js layout structure alignment fix */
 .header {
-    order: 1;
-    width: 100%;
+  order: 1;
+  width: 100%;
 }
 
 .projectWrapper {
-    order: 2;
-    width: 100%;
+  order: 2;
+  width: 100%;
 }

@@ -1,78 +1,73 @@
 @media screen and (max-width: 1520px) {
+  .project {
+    width: 48%;
+    box-sizing: border-box;
+    border: 1px solid #fff;
+    background-position: center;
+    background-size: cover;
+    border-color: #00994d;
+    margin-top: 15px;
+  }
 
-    .project {
-        width: 48%;
-        box-sizing: border-box;
-        border: 1px solid #fff;
-        background-position: center;
-        background-size: cover;
-        border-color: #00994d;
-        margin-top: 15px;
-    }
-
-    .footer {
-        width: 60%;
-    }
-
+  .footer {
+    width: 60%;
+  }
 }
 
 @media screen and (max-width: 960px) {
+  .container {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+  }
 
-	.container {
-		width:90%;
-		display: flex;
-		flex-wrap: wrap;
-	}
+  .project {
+    width: 32.33%;
+    box-sizing: border-box;
+    border: 1px solid #fff;
+    background-position: center;
+    background-size: cover;
+    border-color: #00994d;
+    margin-top: 15px;
+  }
 
-    .project {
-        width: 32.33%;
-        box-sizing: border-box;
-        border: 1px solid #fff;
-        background-position: center;
-        background-size: cover;
-        border-color: #00994d;
-        margin-top: 15px;
-    }
-
-    .footer {
-         width: 90%;
-    }
-
+  .footer {
+    width: 90%;
+  }
 }
 
 @media screen and (max-width: 699px) {
+  .container {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+  }
 
-	.container {
-		width:90%;
-		display: flex;
-		flex-wrap: wrap;
-	}
+  .project {
+    width: 49%;
+  }
 
-    .project {
-        width: 49%;
-	}
-
-    .footer {
-        width: 90%;
-    }
+  .footer {
+    width: 90%;
+  }
 }
 
 @media screen and (max-width: 500px) {
-	.container {
-		width:90%;
-		display: flex;
-		flex-wrap: wrap;
-	}
+  .container {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+  }
 
-	.project {
-        width: 100%;
-	}
+  .project {
+    width: 100%;
+  }
 }
 
 /***** hamburger menu *****/
 
 .menuBurger {
-  display: none;   /* hide hamburger menu */
+  display: none; /* hide hamburger menu */
 }
 
 @media screen and (max-width: 450px) {
@@ -86,23 +81,23 @@
     align-items: center;
   }
 
-    .menuBurger {
-        display: block;
-        padding-left: 20px;
-        padding-top: 9px;
-    }
+  .menuBurger {
+    display: block;
+    padding-left: 20px;
+    padding-top: 9px;
+  }
 
-    .container {
-        width: 100%;
-    }
+  .container {
+    width: 100%;
+  }
 
-    .project {
-        width: 95%;
-        margin-left: auto;
-        margin-right: auto;
-    }
+  .project {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-    .footer {
-        width: 100%;
-    }
+  .footer {
+    width: 100%;
+  }
 }

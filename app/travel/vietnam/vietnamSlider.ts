@@ -1,6 +1,6 @@
 const TOTAL_SLIDES = 11;
-export const VIETNAM_PATH = '/travel/vietnam';
-const VIETNAM_RETURN_SLIDE_KEY = 'vietnamReturnSlide';
+export const VIETNAM_PATH = "/travel/vietnam";
+const VIETNAM_RETURN_SLIDE_KEY = "vietnamReturnSlide";
 const AUTOPLAY_DELAY_MS = 15000;
 
 type ItemState = { position: number; transform: number };
@@ -17,10 +17,10 @@ let autoplayTimer: ReturnType<typeof setInterval> | null = null;
 let listenersBound = false;
 
 function getSliderElements() {
-  const slider = document.querySelector('.slider');
-  const items = slider?.querySelector('.slider__items') as HTMLElement | null;
-  const sliderItems = slider?.querySelectorAll('.slider__item');
-  const indicators = slider?.querySelectorAll('.slider__indicators > li');
+  const slider = document.querySelector(".slider");
+  const items = slider?.querySelector(".slider__items") as HTMLElement | null;
+  const sliderItems = slider?.querySelectorAll(".slider__item");
+  const indicators = slider?.querySelectorAll(".slider__indicators > li");
   return { slider, items, sliderItems, indicators };
 }
 
@@ -32,12 +32,14 @@ function getSlideIndexFromDayPath(path: string) {
   return day - 1;
 }
 
-function getItemIndex(mode: 'min' | 'max') {
+function getItemIndex(mode: "min" | "max") {
   let index = 0;
   for (let i = 0; i < state.itemsArray.length; i++) {
     if (
-      (state.itemsArray[i].position < state.itemsArray[index].position && mode === 'min') ||
-      (state.itemsArray[i].position > state.itemsArray[index].position && mode === 'max')
+      (state.itemsArray[i].position < state.itemsArray[index].position &&
+        mode === "min") ||
+      (state.itemsArray[i].position > state.itemsArray[index].position &&
+        mode === "max")
     ) {
       index = i;
     }
@@ -45,7 +47,7 @@ function getItemIndex(mode: 'min' | 'max') {
   return index;
 }
 
-function getItemPosition(mode: 'min' | 'max') {
+function getItemPosition(mode: "min" | "max") {
   return state.itemsArray[getItemIndex(mode)].position;
 }
 
@@ -74,17 +76,21 @@ function applyTransform() {
 
   items.style.transform = `translateX(${state.transformValue}%)`;
   indicators?.forEach((indicator, i) => {
-    indicator.classList.toggle('active', i === state.indicatorIndex);
+    indicator.classList.toggle("active", i === state.indicatorIndex);
   });
   sliderItems?.forEach((item, i) => {
     const itemState = state.itemsArray[i];
     if (itemState) {
-      (item as HTMLElement).style.transform = `translateX(${itemState.transform}%)`;
+      (item as HTMLElement).style.transform =
+        `translateX(${itemState.transform}%)`;
     }
   });
 
   if (window.location.pathname === VIETNAM_PATH) {
-    sessionStorage.setItem(VIETNAM_RETURN_SLIDE_KEY, String(state.indicatorIndex));
+    sessionStorage.setItem(
+      VIETNAM_RETURN_SLIDE_KEY,
+      String(state.indicatorIndex),
+    );
   }
 }
 
@@ -97,20 +103,20 @@ function stopAutoplay() {
 
 function startAutoplay() {
   stopAutoplay();
-  autoplayTimer = setInterval(() => move('next'), AUTOPLAY_DELAY_MS);
+  autoplayTimer = setInterval(() => move("next"), AUTOPLAY_DELAY_MS);
 }
 
-function move(direction: 'next' | 'prev') {
+function move(direction: "next" | "prev") {
   const { sliderItems } = getSliderElements();
   if (!sliderItems || sliderItems.length === 0) return;
 
   const indicatorIndexMax = sliderItems.length - 1;
 
-  if (direction === 'next') {
+  if (direction === "next") {
     state.currentPosition++;
-    if (state.currentPosition > getItemPosition('max')) {
-      const nextItem = getItemIndex('min');
-      state.itemsArray[nextItem].position = getItemPosition('max') + 1;
+    if (state.currentPosition > getItemPosition("max")) {
+      const nextItem = getItemIndex("min");
+      state.itemsArray[nextItem].position = getItemPosition("max") + 1;
       state.itemsArray[nextItem].transform += state.itemsArray.length * 100;
     }
     state.transformValue -= 100;
@@ -120,9 +126,9 @@ function move(direction: 'next' | 'prev') {
     }
   } else {
     state.currentPosition--;
-    if (state.currentPosition < getItemPosition('min')) {
-      const nextItem = getItemIndex('max');
-      state.itemsArray[nextItem].position = getItemPosition('min') - 1;
+    if (state.currentPosition < getItemPosition("min")) {
+      const nextItem = getItemIndex("max");
+      state.itemsArray[nextItem].position = getItemPosition("min") - 1;
       state.itemsArray[nextItem].transform -= state.itemsArray.length * 100;
     }
     state.transformValue += 100;
@@ -137,7 +143,7 @@ function move(direction: 'next' | 'prev') {
 
 function moveTo(index: number) {
   let steps = 0;
-  const direction = index > state.indicatorIndex ? 'next' : 'prev';
+  const direction = index > state.indicatorIndex ? "next" : "prev";
   while (index !== state.indicatorIndex && steps <= TOTAL_SLIDES) {
     move(direction);
     steps++;
@@ -153,10 +159,10 @@ function goToSlideInstant(index: number) {
 
   const { items } = getSliderElements();
   if (items) {
-    items.style.transition = 'none';
+    items.style.transition = "none";
     applyTransform();
-    items.offsetHeight;
-    items.style.transition = '';
+    void items.offsetHeight; // force reflow before re-enabling transition
+    items.style.transition = "";
   } else {
     applyTransform();
   }
@@ -185,8 +191,10 @@ export function syncVietnamSlider() {
   const wasBack = returningViaBack;
   returningViaBack = false;
 
-  const nav = performance.getEntriesByType('navigation')[0] as PerformanceNavigationTiming | undefined;
-  const isBackNav = wasBack || nav?.type === 'back_forward';
+  const nav = performance.getEntriesByType("navigation")[0] as
+    | PerformanceNavigationTiming
+    | undefined;
+  const isBackNav = wasBack || nav?.type === "back_forward";
   const restoreIndex = getRestoreSlideIndex(isBackNav);
 
   if (restoreIndex !== null) {
@@ -195,7 +203,8 @@ export function syncVietnamSlider() {
     return;
   }
 
-  const fromFreshNav = !isBackNav && !document.referrer.includes('/travel/vietnam');
+  const fromFreshNav =
+    !isBackNav && !document.referrer.includes("/travel/vietnam");
   if (fromFreshNav) {
     sessionStorage.removeItem(VIETNAM_RETURN_SLIDE_KEY);
     resetSliderState();
@@ -207,32 +216,32 @@ export function syncVietnamSlider() {
 }
 
 export function bindVietnamSliderListeners() {
-  if (listenersBound || typeof window === 'undefined') return;
+  if (listenersBound || typeof window === "undefined") return;
   listenersBound = true;
 
-  window.addEventListener('popstate', () => {
+  window.addEventListener("popstate", () => {
     returningViaBack = true;
   });
 
-  window.addEventListener('pageshow', () => {
+  window.addEventListener("pageshow", () => {
     syncVietnamSlider();
     requestAnimationFrame(syncVietnamSlider);
   });
 
-  document.addEventListener('visibilitychange', () => {
-    if (document.visibilityState === 'hidden') {
+  document.addEventListener("visibilitychange", () => {
+    if (document.visibilityState === "hidden") {
       stopAutoplay();
     } else if (window.location.pathname === VIETNAM_PATH) {
       startAutoplay();
     }
   });
 
-  document.addEventListener('click', (event) => {
+  document.addEventListener("click", (event) => {
     const target = event.target as HTMLElement;
 
     if (window.location.pathname === VIETNAM_PATH) {
       const dayLink = target.closest('a[href*="/travel/vietnam/day"]');
-      const href = dayLink?.getAttribute('href');
+      const href = dayLink?.getAttribute("href");
       if (href) {
         const slideIndex = getSlideIndexFromDayPath(href);
         if (slideIndex !== null) {
@@ -243,7 +252,9 @@ export function bindVietnamSliderListeners() {
 
     if (window.location.pathname !== VIETNAM_PATH) return;
 
-    const slideTo = target.closest('.slider__indicators > li')?.getAttribute('data-slide-to');
+    const slideTo = target
+      .closest(".slider__indicators > li")
+      ?.getAttribute("data-slide-to");
     if (slideTo !== null && slideTo !== undefined) {
       event.preventDefault();
       moveTo(parseInt(slideTo, 10));
@@ -251,29 +262,29 @@ export function bindVietnamSliderListeners() {
       return;
     }
 
-    if (target.closest('.slider__control_next')) {
+    if (target.closest(".slider__control_next")) {
       event.preventDefault();
-      move('next');
+      move("next");
       startAutoplay();
       return;
     }
 
-    if (target.closest('.slider__control_prev')) {
+    if (target.closest(".slider__control_prev")) {
       event.preventDefault();
-      move('prev');
+      move("prev");
       startAutoplay();
     }
   });
 
-  document.addEventListener('mouseover', (event) => {
-    if ((event.target as HTMLElement).closest('.slider')) {
+  document.addEventListener("mouseover", (event) => {
+    if ((event.target as HTMLElement).closest(".slider")) {
       stopAutoplay();
     }
   });
 
-  document.addEventListener('mouseout', (event) => {
-    const from = (event.target as HTMLElement).closest('.slider');
-    const to = (event.relatedTarget as HTMLElement | null)?.closest('.slider');
+  document.addEventListener("mouseout", (event) => {
+    const from = (event.target as HTMLElement).closest(".slider");
+    const to = (event.relatedTarget as HTMLElement | null)?.closest(".slider");
     if (from && !to && window.location.pathname === VIETNAM_PATH) {
       startAutoplay();
     }
@@ -281,7 +292,7 @@ export function bindVietnamSliderListeners() {
 }
 
 export function rememberVietnamSlide(index: number) {
-  if (typeof window === 'undefined') return;
+  if (typeof window === "undefined") return;
   if (index < 0 || index >= TOTAL_SLIDES) return;
   sessionStorage.setItem(VIETNAM_RETURN_SLIDE_KEY, String(index));
 }

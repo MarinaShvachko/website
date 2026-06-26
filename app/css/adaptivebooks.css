@@ -1,82 +1,78 @@
 @media screen and (max-width: 1460px) {
-
   .container {
-    width:80%;
+    width: 80%;
     display: flex;
     flex-wrap: wrap;
   }
 }
 
 @media screen and (max-width: 960px) {
-
-	.container {
-		width:90%;
-		display: flex;
-		flex-wrap: wrap;
-	}
+  .container {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 @media screen and (max-width: 800px) {
-
   p {
-  font-size: 15px;
+    font-size: 15px;
   }
 
   .container {
-		width:90%;
-		display: flex;
-		flex-wrap: wrap;
-	}
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 @media screen and (max-width: 600px) {
-
   .book {
     border-bottom: none;
   }
 
   .bookPhotoLeft1 {
-  width: 100%;
-  outline: none;
-  height: 200px;
-  background-position: center;
+    width: 100%;
+    outline: none;
+    height: 200px;
+    background-position: center;
   }
 
   .bookDescriptionRight1 {
-  width: 100%;
-  outline: none;
-  border-bottom: none;
+    width: 100%;
+    outline: none;
+    border-bottom: none;
   }
 
   .bookPhotoRight2 {
-  width: 100%;
-  outline: none;
-  height: 200px;
-  order: 1;
-  background-position: center;
+    width: 100%;
+    outline: none;
+    height: 200px;
+    order: 1;
+    background-position: center;
   }
 
   .bookDescriptionLeft2 {
-  width: 100%;
-  outline: none;
-  order: 2;
+    width: 100%;
+    outline: none;
+    order: 2;
   }
 
   .container {
-		width:90%;
-		display: flex;
-		flex-wrap: wrap;
-	}
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+  }
 
   h4 {
-  font-size: 18px;
-  line-height: 30px;
+    font-size: 18px;
+    line-height: 30px;
   }
 }
 
 @media screen and (max-width: 491px) {
   p {
-  font-size: 13px;
+    font-size: 13px;
   }
 
   .book {
@@ -107,16 +103,15 @@
 }
 
 /***** hamburger menu *****/
-  .menuBurger {
-  display: none;   /* hide hamburger menu */
+.menuBurger {
+  display: none; /* hide hamburger menu */
 }
 
 @media screen and (max-width: 450px) {
+  p {
+    font-size: 10px;
+  }
 
-   p {
-  font-size: 10px;
-  } 
- 
   .menu {
     display: none; /* hide menu items */
     background: #2c2c2c;
@@ -133,7 +128,7 @@
     padding-top: 9px;
   }
 
-     .container {
+  .container {
     width: 100%;
   }
 

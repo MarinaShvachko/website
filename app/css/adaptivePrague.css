@@ -1,50 +1,47 @@
 @media screen and (max-width: 960px) {
+  .container {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+  }
 
-	.container {
-		width:90%;
-		display: flex;
-		flex-wrap: wrap;
-	}
-
-.project {
+  .project {
     width: 33.33%;
-	}
-
+  }
 }
 
 @media screen and (max-width: 699px) {
+  .container {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+  }
 
-	.container {
-		width:90%;
-		display: flex;
-		flex-wrap: wrap;
-	}
-
-.project {
+  .project {
     width: 50%;
-	}
+  }
 }
 
 @media screen and (max-width: 500px) {
-	.container {
-		width:90%;
-		display: flex;
-		flex-wrap: wrap;
-	}
+  .container {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+  }
 
-	.project {
+  .project {
     width: 100%;
-	}
+  }
 
   .imgInText {
     width: 100%;
-}
+  }
 }
 
 /***** hamburger menu *****/
 
 .menuBurger {
-  display: none;   /* hide hamburger menu */
+  display: none; /* hide hamburger menu */
 }
 
 @media screen and (max-width: 450px) {
@@ -60,11 +57,11 @@
 
   .photoInText {
     width: 100%;
-}
+  }
 
-.fullImgInText {
+  .fullImgInText {
     width: 100%;
-}
+  }
 
   .menuBurger {
     display: block;
@@ -74,15 +71,14 @@
 
   .container {
     width: 100%;
-}
+  }
 
-.projectWrapper {
+  .projectWrapper {
     width: 95%;
     margin: auto;
-}
+  }
 
-.imgInText {
+  .imgInText {
     width: 100%;
-}
-
+  }
 }

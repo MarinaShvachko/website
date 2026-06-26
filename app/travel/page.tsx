@@ -1,9 +1,9 @@
 // app/travel/page.tsx
-import SiteHeader from '@/app/components/SiteHeader';
-import SiteFooter from '@/app/components/SiteFooter';
-import '../css/common.css';
-import '../css/stylesTravel.css';
-import '../css/adaptiveTravel.css';
+import SiteHeader from "@/app/components/SiteHeader";
+import SiteFooter from "@/app/components/SiteFooter";
+import "../css/common.css";
+import "../css/stylesTravel.css";
+import "../css/adaptiveTravel.css";
 
 export default function TravelPage() {
   return (
@@ -12,26 +12,33 @@ export default function TravelPage() {
       <SiteHeader />
 
       {/* TRAVEL CONTENT WRAPPER */}
-      <div className="projectWrapper" style={{ order: 2, width: '100%' }}>
+      <div className="projectWrapper" style={{ order: 2, width: "100%" }}>
         <div className="contentSection">
-           
           {/* Vietnam */}
           <div className="project">
             <a href="/travel/vietnam">
-              <img className="img" src="/img/Flag_of_Vietnam.png" alt="Vietnam" />
+              <img
+                className="img"
+                src="/img/Flag_of_Vietnam.png"
+                alt="Vietnam"
+              />
             </a>
           </div>
 
           {/* Израиль */}
           <div className="project">
             <a href="/travel/israel">
-              <img className="imgForSmallFlag" src="/img/Flag_of_Israel.png" alt="Israel" />
+              <img
+                className="imgForSmallFlag"
+                src="/img/Flag_of_Israel.png"
+                alt="Israel"
+              />
             </a>
           </div>
-            
+
           {/* Греция */}
           <div className="project">
-            <a href="/travel/greece">                      
+            <a href="/travel/greece">
               <img className="img" src="/img/Flag_of_Greece.png" alt="Greece" />
             </a>
           </div>
@@ -46,7 +53,11 @@ export default function TravelPage() {
           {/* Чехия */}
           <div className="project">
             <a href="/travel/prague">
-              <img className="img" src="/img/Flag_of_the_Czech_Republic.png" alt="CZ" />
+              <img
+                className="img"
+                src="/img/Flag_of_the_Czech_Republic.png"
+                alt="CZ"
+              />
             </a>
           </div>
 
@@ -85,7 +96,11 @@ export default function TravelPage() {
           {/* каникулы в Европе с друзьями */}
           <div className="project">
             <a href="/travel/vacation">
-              <img className="img" src="/img/Flag_Europe.png" alt="Europe with friends" />
+              <img
+                className="img"
+                src="/img/Flag_Europe.png"
+                alt="Europe with friends"
+              />
             </a>
           </div>
 
@@ -93,14 +108,13 @@ export default function TravelPage() {
           <div className="project">
             <a href="/travel/italy">
               <img className="img" src="/img/Flag_of_Italy.png" alt="Italy" />
-            </a> 
+            </a>
           </div>
-         
         </div>
       </div>
 
       {/* FOOTER BAR */}
-      <SiteFooter style={{ order: 3, width: '100%' }} />
+      <SiteFooter style={{ order: 3, width: "100%" }} />
     </div>
   );
 }
