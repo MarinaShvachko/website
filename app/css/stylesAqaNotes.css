@@ -83,7 +83,7 @@ pre {
     overflow-y: auto;
 }
 
-.try {
+.contentSection {
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
@@ -130,7 +130,7 @@ ol, li {
 	width: 99%;
 }
 
-.FullimgInText {
+.fullImgInText {
 	width: 100%;
 	width: 80%;
     margin: 0 auto;

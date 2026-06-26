@@ -1,33 +1,15 @@
 // app/aqa/docker/page.tsx
-"use client";
-
-import { useState } from 'react';
+import SiteHeader from '@/app/components/SiteHeader';
+import SiteFooter from '@/app/components/SiteFooter';
 import '../../css/common.css';
 import '../../css/stylesAqaNotes.css';
 import '../../css/adaptiveStylesAqaNotes.css';
 
 export default function DockerNotesPage() {
-  const [menuOpen, setMenuOpen] = useState(false);
-
   return (
     <div className="container">
       {/* HEADER & NAVIGATION BAR */}
-      <header className="header">
-        <div className="menuBurger" onClick={() => setMenuOpen(!menuOpen)}>
-          <svg width="32" height="32" xmlns="http://www.w3.org/2000/svg">
-            <g><title>background</title><rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1" /></g>
-            <g><title>Layer 1</title><path fill="#049900" id="svg_1" d="m4,10l24,0c1.104,0 2,-0.896 2,-2s-0.896,-2 -2,-2l-24,0c-1.104,0 -2,0.896 -2,2s0.896,2 2,2zm24,4l-24,0c-1.104,0 -2,0.896 -2,2s0.896,2 2,2l24,0c1.104,0 2,-0.896 2,-2s-0.896,-2 -2,-2zm0,8l-24,0c-1.104,0 -2,0.896 -2,2s0.896,2 2,2l24,0c1.104,0 2,-0.896 2,-2s-0.896,-2 -2,-2z" /></g>
-          </svg>
-        </div>
-        
-        <ul className={`menu clearfix ${menuOpen ? 'open' : ''}`}>
-          <li><a href="/">Home</a></li>
-          {/* <li><a href="/cv">CV</a></li> */}
-          <li><a href="/projects">Projects</a></li> 
-          <li><a href="/travel">Travel</a></li>
-          <li><a href="/books">Books</a></li>
-        </ul>
-      </header>
+      <SiteHeader />
 
       {/* DOCKER CONTENT SECTION */}
       <div className="projectWrapper" style={{ order: 2, width: '100%' }}>
@@ -73,7 +55,7 @@ export default function DockerNotesPage() {
         <h3>3. Watch the created container on UI</h3>
         <p>Open in browser <a href="http://localhost:4444/" target="_blank" rel="noopener noreferrer">http://localhost:4444</a> You should see one Firefox container is created.</p>
         <p>
-           <img className="FullimgInText" src="/img/docker/startFirefoxStandaloneUI.jpg" alt="Container on UI Selenium Grid" />
+           <img className="fullImgInText" src="/img/docker/startFirefoxStandaloneUI.jpg" alt="Container on UI Selenium Grid" />
         </p>
         
         <h3>4. Run the test that will be executed in Docker Firefox container</h3>
@@ -94,7 +76,7 @@ export default function DockerNotesPage() {
         <h3>5. Watch creation of session</h3>
         <p>After start the test, a session for Firefox is created. You can watch it on UI <a href="http://localhost:4444/ui#/sessions" target="_blank" rel="noopener noreferrer">http://localhost:4444/ui#/sessions</a>. You can see it only while test is running and you might need to update the page.</p>
         <p>
-           <img className="FullimgInText" src="/img/docker/FirefoxSession.jpg" alt="Creation of Firefox session on UI" />
+           <img className="fullImgInText" src="/img/docker/FirefoxSession.jpg" alt="Creation of Firefox session on UI" />
         </p>
         
         <h3>6. Watch execution of the test on UI</h3>
@@ -124,7 +106,7 @@ export default function DockerNotesPage() {
         <code>docker run -d --net grid -e SE_EVENT_BUS_HOST=selenium-hub --shm-size="2g" -e SE_EVENT_BUS_PUBLISH_PORT=4442 -e SE_EVENT_BUS_SUBSCRIBE_PORT=4443 selenium/node-firefox:4.2.1-20220531</code>
         <p>Now you can see on <a href="http://localhost:4444/ui" target="_blank" rel="noopener noreferrer"> http://localhost:4444/ui</a> that 2 containers are running</p>
         <p>
-           <img className="FullimgInText" src="/img/docker/twoContainersAreRunning.jpg" alt="Creation of Firefox session on UI" />
+           <img className="fullImgInText" src="/img/docker/twoContainersAreRunning.jpg" alt="Creation of Firefox session on UI" />
         </p>
         
         <h3>2. Run testng.xml to run tests in Docker in Firefox and Chrome containers</h3>
@@ -138,7 +120,7 @@ export default function DockerNotesPage() {
           </a>
         </p>
         <p>
-           <img className="FullimgInText" src="/img/docker/TwoSessionsSeleniumGrid.jpg" alt="Run testNg.xml file" />
+           <img className="fullImgInText" src="/img/docker/TwoSessionsSeleniumGrid.jpg" alt="Run testNg.xml file" />
         </p>
         
         <h3>4. Stop containers and remove Grid:</h3>
@@ -186,13 +168,7 @@ export default function DockerNotesPage() {
       </div>
 
       {/* FOOTER BAR */}
-      <footer className="footer" style={{ order: 3, width: '100%' }}>
-        <div className="copirait">
-          <p className="footerText">
-            © {new Date().getFullYear()} Marina Shvachko. All rights reserved.
-          </p>
-        </div>
-      </footer>
+      <SiteFooter style={{ order: 3, width: '100%' }} />
     </div>
   );
 }

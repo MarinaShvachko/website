@@ -1,5 +1,3 @@
-/* TODO: написать в одну строку все, что можно объединить*/
-
 * {
 	margin: 0;
 }
@@ -45,7 +43,7 @@ a:hover {
     padding: 1%;
 }
 
-.try {
+.contentSection {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;

@@ -1,33 +1,15 @@
 // app/aqa/jenkins/page.tsx
-"use client";
-
-import { useState } from 'react';
+import SiteHeader from '@/app/components/SiteHeader';
+import SiteFooter from '@/app/components/SiteFooter';
 import '../../css/common.css';
 import '../../css/stylesAqaNotes.css';
 import '../../css/adaptiveStylesAqaNotes.css';
 
 export default function JenkinsPage() {
-  const [menuOpen, setMenuOpen] = useState(false);
-
   return (
     <div className="container">
       {/* HEADER & NAVIGATION BAR */}
-      <header className="header">
-        <div className="menuBurger" onClick={() => setMenuOpen(!menuOpen)}>
-          <svg width="32" height="32" xmlns="http://www.w3.org/2000/svg">
-            <g><title>background</title><rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1" /></g>
-            <g><title>Layer 1</title><path fill="#049900" id="svg_1" d="m4,10l24,0c1.104,0 2,-0.896 2,-2s-0.896,-2 -2,-2l-24,0c-1.104,0 -2,0.896 -2,2s0.896,2 2,2zm24,4l-24,0c-1.104,0 -2,0.896 -2,2s0.896,2 2,2l24,0c1.104,0 2,-0.896 2,-2s-0.896,-2 -2,-2zm0,8l-24,0c-1.104,0 -2,0.896 -2,2s0.896,2 2,2l24,0c1.104,0 2,-0.896 2,-2s-0.896,-2 -2,-2z" /></g>
-          </svg>
-        </div>
-        
-        <ul className={`menu clearfix ${menuOpen ? 'open' : ''}`}>
-          <li><a href="/">Home</a></li>
-          {/* <li><a href="/cv">CV</a></li> */}
-          <li><a href="/projects">Projects</a></li> 
-          <li><a href="/travel">Travel</a></li>
-          <li><a href="/books">Books</a></li>
-        </ul>
-      </header>
+      <SiteHeader />
 
       {/* JENKINS CONTENT SECTION */}
       <div className="projectWrapper" style={{ order: 2, width: '100%' }}>
@@ -82,7 +64,7 @@ export default function JenkinsPage() {
         </ol>
 
         <p>
-          <img className="FullimgInText" src="/img/jenkins/port8080.png" alt="Add porp 8080" />
+          <img className="fullImgInText" src="/img/jenkins/port8080.png" alt="Add porp 8080" />
         </p>
 
         <p>After you did it you can open Jenkins UI in a browser http://SERVER_IP:8080. To log in you need an Administrator password, so type in the same Linux console <code>sudo cat /var/lib/jenkins/secrets/initialAdminPassword</code>, copy the password and log in.</p>
@@ -113,13 +95,13 @@ export default function JenkinsPage() {
         </ol>
 
         <p>
-          <img className="FullimgInText" src="/img/jenkins/AddServersKey.jpg" alt="Add server's key" />
+          <img className="fullImgInText" src="/img/jenkins/AddServersKey.jpg" alt="Add server's key" />
         </p>
 
         <p>Below the "Key" field find "SSH Server" and click "Add". In the field "Name" type the name of your server, the name can be anything, it's needed only for setting up Jenkins. In the field "Hostname" type server's IP address. In the field "Username" add the username that specified on the server, usually it's ec2-user. In the field "Remote Directory" add path to the html folder on the server, the path is: /var/www/html</p>
 
         <p>
-          <img className="FullimgInText" src="/img/jenkins/SSHServerSettings.png" alt="SSH server's settings" />
+          <img className="fullImgInText" src="/img/jenkins/SSHServerSettings.png" alt="SSH server's settings" />
         </p>
 
         <p>Click the button "Test configuration", you should see "Success".</p>
@@ -145,7 +127,7 @@ export default function JenkinsPage() {
         <p>Go to Jenkins UI and create a new job with the type "Freestyle project". In job's settings find "Source Code Management" section. Activate "Git" radiobutton. In the field "Repository URL" put URL of your repository that you want to deploy to the server (it's the same URL we use for clonning the repository, but select "Clone" via SSH). As you add URL you will see an error because we didn't add the private key yet (if use https link - everithing will work without keys). To add the private key to the Jenkins repo click "+ Add" button and select "Jenkins".</p>
 
         <p>
-          <img className="FullimgInText" src="/img/jenkins/errorConnectionToGitRepoViaSSH.png" alt="Error message if connection to Git via SSH wasn't set" />
+          <img className="fullImgInText" src="/img/jenkins/errorConnectionToGitRepoViaSSH.png" alt="Error message if connection to Git via SSH wasn't set" />
         </p>
 
         <p>In the opened window find "Kind" and select "SSH Username with private key". Username = your GitHub username (to get to know your user name type in git Bash console <code>git config --list</code>). Find "Private Key" and select "Enter directly", then past there the private key that was copied earlier. Add ID and Description so you can understand later for what connection this credential is. Click "Add" button to save all settings.</p>
@@ -171,7 +153,7 @@ export default function JenkinsPage() {
         <p>Go to job's settings, activate the checkbox "Restrict where this project can be run" and start typing the label of the node you want to select. Select node from drop-down list and don't forget to delete white space after the label's name because it is added automatically. (to select some labels just add labels' names splitted by white spaces). Save settings.</p>
 
         <p>
-          <img className="FullimgInText" src="/img/jenkins/newNodeAdded.png" alt="New Node added" />
+          <img className="fullImgInText" src="/img/jenkins/newNodeAdded.png" alt="New Node added" />
         </p>
 
         <h3>Start job from URL or Linux console</h3>
@@ -250,7 +232,7 @@ export default function JenkinsPage() {
         <p>Run this job and you will see on UI information about each stage from the script. If you click on the stage you can see all logs connected to it.</p>
 
         <p>
-          <img className="FullimgInText" src="/img/jenkins/stages.png" alt="Pipeline" />
+          <img className="fullImgInText" src="/img/jenkins/stages.png" alt="Pipeline" />
         </p>
 
         <p>Instead of typing all this script in Jenkins console it is possible automatically take a file with the script from GitHub:</p>
@@ -300,13 +282,7 @@ job.updateNextBuildNumber(1)`}</code>
       </div>
 
       {/* FOOTER BAR */}
-      <footer className="footer" style={{ order: 3, width: '100%' }}>
-        <div className="copirait">
-          <p className="footerText">
-            © {new Date().getFullYear()} Marina Shvachko. All rights reserved.
-          </p>
-        </div>
-      </footer>
+      <SiteFooter style={{ order: 3, width: '100%' }} />
     </div>
   );
 }

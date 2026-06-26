@@ -1,10 +1,6 @@
-/* TODO: написать в одну строку все, что можно объединить*/
-
 * {
     margin: 0;
 }
-
-
 
 a {
     text-decoration: none;
@@ -57,7 +53,7 @@ p {
     height: 100px;
 }
 
-.try {
+.contentSection {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -90,7 +86,7 @@ p {
     width: 99%;
 }
 
-.FullimgInText {
+.fullImgInText {
     width: 50%;
 }
 
@@ -110,7 +106,7 @@ p {
 
 /***** slider *****/
 
- .bodyN {
+ .articleBody {
       /*height: 3000px;*/
      /* min-height: calc(100vh - 268px);*/
     }
@@ -125,27 +121,27 @@ p {
      
     }
 
-    /* стили для обёртки, в которой заключены слайды */
+    /* styles for wrapper, which contains slides */
     .slider__wrapper {
       position: relative;
       overflow: hidden;
       width: 100%;
     }
 
-    /* стили для контейнера слайдов */
+    /* styles for container of slides */
     .slider__items {
       display: flex;
       transition: transform 0.6s ease;
     }
 
-    /* стили для слайдов */
+    /* styles for slides */
     .slider__item {
       flex: 0 0 100%;
       max-width: 100%;
       box-sizing: border-box;
     }
 
-    /* стили для кнопок "вперед" и "назад" */
+    /* styles for buttons "forward" and "backward" */
     .slider__control {
       position: absolute;
       top: 50%;
@@ -198,7 +194,7 @@ p {
       background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
     }
 
-    /* стили для индикаторов */
+    /* styles for indicators */
     .slider__indicators {
       position: absolute;
       right: 0;
@@ -304,8 +300,6 @@ p {
        height: 600px;
        background-size: cover;
     }
-
-
 
     .slider__item_inner {
       position: absolute;

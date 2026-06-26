@@ -1,30 +1,14 @@
-"use client";
-
-import { useState } from "react";
+import SiteHeader from '@/app/components/SiteHeader';
+import SiteFooter from '@/app/components/SiteFooter';
 import "../../css/common.css";
 import "../../css/stylesSimplePage.css";
 import "../../css/vietnamStylesSimplePage.css";
 import "../../css/adaptiveStylesSimplePage.css";
 
 export default function GreecePage() {
-  const [menuOpen, setMenuOpen] = useState(false);
-
   return (
     <div className="container">
-      <header className="header">
-        <div className="menuBurger" onClick={() => setMenuOpen(!menuOpen)}>
-          <svg width="32" height="32" xmlns="http://www.w3.org/2000/svg">
-            <g><title>background</title><rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1" /></g>
-            <g><title>Layer 1</title><path fill="#049900" id="svg_1" d="m4,10l24,0c1.104,0 2,-0.896 2,-2s-0.896,-2 -2,-2l-24,0c-1.104,0 -2,0.896 -2,2s0.896,2 2,2zm24,4l-24,0c-1.104,0 -2,0.896 -2,2s0.896,2 2,2l24,0c1.104,0 2,-0.896 2,-2s-0.896,-2 -2,-2zm0,8l-24,0c-1.104,0 -2,0.896 -2,2s0.896,2 2,2l24,0c1.104,0 2,-0.896 2,-2s-0.896,-2 -2,-2z" /></g>
-          </svg>
-        </div>
-        <ul className={`menu clearfix ${menuOpen ? "open" : ""}`}>
-          <li><a href="/">Home</a></li>
-          <li><a href="/projects">Projects</a></li>
-          <li><a href="/travel">Travel</a></li>
-          <li><a href="/books">Books</a></li>
-        </ul>
-      </header>
+      <SiteHeader />
 
       <div className="projectWrapper" style={{ order: 2, width: "100%" }}>
         <h4>My trip to Creete.</h4>
@@ -44,19 +28,19 @@ export default function GreecePage() {
 
         <p>In a map the city looks enough big, but actually it&rsquo;s not so big. We were walking many kilometres every day and we visited many places in the city. For me the most interesting was our walk to a usual residential area. During that walk we found an old chirch, it was the very small chirch but beautiful and conciliative. On the way back we got lost, but local people told us where we were.</p>
         <p>The local homes (I wish I lived in that home in old age.)</p>
-        <p><img className="FullimgInText" src="/img/greece/street.jpg" alt="street" /></p>
+        <p><img className="fullImgInText" src="/img/greece/street.jpg" alt="street" /></p>
 
         <p>There were lots of pomegranate&rsquo;s and lime&rsquo;s trees. Some people have goats and cocks. And everywhere were cats, very big and muscular.</p>
         <p>Elmost every evening we went to a shop for fresh orange juice, that was sold in bottles. People in my country usually don&rsquo;t drink fresh juise every day, and at cafees it costs not cheap. Another interesting things I notice - the way of selling bananas, and coffe. They was amazing smell of fresh gring coffee.</p>
         <p>The way of selling bananas.</p>
-        <p><img className="FullimgInText" src="/img/greece/bananas on a tree.jpg" alt="bananas" /></p>
+        <p><img className="fullImgInText" src="/img/greece/bananas on a tree.jpg" alt="bananas" /></p>
 
         <p>The most popular place in Agios Nikolas - the lake. There are lots of cafes and restaurants. It is interesting that one side of the lake it&rsquo;s a bluff rock. I don&rsquo;t know why but I couldn&rsquo;t imagine that it can be.</p>
-        <p><img className="FullimgInText" src="/img/greece/lake.jpg" alt="lake" /></p>
+        <p><img className="fullImgInText" src="/img/greece/lake.jpg" alt="lake" /></p>
 
         <p>The lake was with fresh water but after an earthquake it stopped regenered and started stink. So, people join the lake with the sea because it was very near to each other and now the lake has a sea&rsquo;s clean, salt water. As I was told, nobody knows how deep is the lake. After a war there were flooded tanks and other military equipment. Every evening I saw a lots of, no, thousands sea urchins in those lake.</p>
         <p>Behind of me you can see the lake and a small bridge, after the bridge is the sea.</p>
-        <p><img className="FullimgInText" src="/img/greece/lake2.jpg" alt="lake" /></p>
+        <p><img className="fullImgInText" src="/img/greece/lake2.jpg" alt="lake" /></p>
 
         <p>While we were wolking at the lake, we found an interesting &ldquo;frozen yougurt&rdquo;. It looks like ice cream, but it don&rsquo;t and the taste isn&rsquo;t like Russian yoghurt. All people must taste it!</p>
 
@@ -115,12 +99,12 @@ export default function GreecePage() {
         </div>
 
         <p>After Santorini I wanted to visit excursion &ldquo;on train&rdquo;. The train rides like other cars and runs through all city and nearest villages. The excursion was interesting but I didn&rsquo;t hear all information because other car&rsquo;s noise.</p>
-        <div className="FullimgInText">
+        <div className="fullImgInText">
           <p><img className="imgInText" src="/img/greece/train.jpg" alt="train" /></p>
         </div>
 
         <p>When we arrived to the village (I don&rsquo;t remember the name of the village) we had some free time. So we went for a walk and eat. I was surprise how big was grapes which was grovin everywhere like ornamental plants.</p>
-        <div className="FullimgInText">
+        <div className="fullImgInText">
           <p><img className="imgInText" src="/img/greece/grapes.jpg" alt="grapes" /></p>
         </div>
 
@@ -134,11 +118,7 @@ export default function GreecePage() {
         <p>5 – To write and summarize all charges</p>
       </div>
 
-      <footer className="footer" style={{ order: 3, width: "100%" }}>
-        <div className="copirait">
-          <p className="footerText">© {new Date().getFullYear()} Marina Shvachko. All rights reserved.</p>
-        </div>
-      </footer>
+      <SiteFooter style={{ order: 3, width: "100%" }} />
     </div>
   );
 }

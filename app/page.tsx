@@ -1,38 +1,13 @@
 // app/page.tsx
-"use client";
-
-import { useState } from 'react';
+import SiteHeader from '@/app/components/SiteHeader';
+import SiteFooter from '@/app/components/SiteFooter';
 import './css/adaptive.css';
 
 export default function HomePage() {
-  const [menuOpen, setMenuOpen] = useState(false);
-
   return (
     <div className="container">
       {/* HEADER & NAVIGATION */}
-      <header className="header">
-        <div className="menuBurger" onClick={() => setMenuOpen(!menuOpen)}>
-          <svg width="32" height="32" xmlns="http://www.w3.org/2000/svg">
-            <g>
-              <title>background</title>
-              <rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1" />
-            </g>
-            <g>
-              <title>Layer 1</title>
-              <path fill="#049900" id="svg_1" d="m4,10l24,0c1.104,0 2,-0.896 2,-2s-0.896,-2 -2,-2l-24,0c-1.104,0 -2,0.896 -2,2s0.896,2 2,2zm24,4l-24,0c-1.104,0 -2,0.896 -2,2s0.896,2 2,2l24,0c1.104,0 2,-0.896 2,-2s-0.896,-2 -2,-2zm0,8l-24,0c-1.104,0 -2,0.896 -2,2s0.896,2 2,2l24,0c1.104,0 2,-0.896 2,-2s-0.896,-2 -2,-2z" />
-            </g>
-          </svg>
-        </div>
-        
-        {/* The menu styles dynamically transition open and closed */}
-        <ul className={`menu clearfix ${menuOpen ? 'open' : ''}`}>
-          <li><a href="/">Home</a></li>
-          {/* <li><a href="/cv">CV</a></li> */}
-          <li><a href="/projects">Projects</a></li> 
-          <li><a href="/travel">Travel</a></li>
-          <li><a href="/books">Books</a></li>
-        </ul>
-      </header>
+      <SiteHeader />
 
       {/* INTRODUCTION HERO BANNER */}
       <div className="introduction">
@@ -51,7 +26,7 @@ export default function HomePage() {
       {/* ABOUT ME BIOGRAPHY SECTION */}
       <div className="aboutMe">
         <div className="overlay">
-          <div className="pp">
+          <div className="textBlock">
             <p>I have been working as a Quality Assurance Engineer since October 2017. At first I used to test different websites. Biggest part of that work was checking of UI. Then, I moved to another company and did functional and integrational testing of a web application and a CRM system. Now I work as AQA and enjoy continuous learning of programming and QA skills. This site is my small hobby. I'm doing it for my amusement, practicing English and CSS/HTML skills.</p>
           </div>
         </div>
@@ -62,7 +37,7 @@ export default function HomePage() {
 
       {/* CERTIFICATES SECTION */}
       <div className="certificates">
-        <div className="pp">
+        <div className="textBlock">
           <div className="certificate">
             <p className="certificateTitle">
               <a href="http://scr.istqb.org/?name=Marina&number=79501&orderBy=relevancy&orderDirection=&dateStart=&dateEnd=&expiryStart=&expiryEnd=&certificationBody=&examProvider=&certificationLevel=&country=" target="_blank" rel="noopener noreferrer">ISTQB</a>
@@ -87,7 +62,7 @@ export default function HomePage() {
       {/* FOOTER BLOG SECTION */}
       <div className="blogLink">
         <div className="overlay">
-           <div className="pp">
+           <div className="textBlock">
                 <p>
                     <a href="/books">Books I have read on QA and other topics. Not all, but these, that worth to read in my opinion. Some of them provided knowledge only about testing, some describe wider concepts. All in all, it helps to improve quality of product, different skills and brings pleasure while reading.</a>
                 </p>
@@ -97,7 +72,7 @@ export default function HomePage() {
 
       {/* PORTFOLIO PROJECTS SECTION */}
       <div className="projects">
-        <div className="pp">
+        <div className="textBlock">
           <a href="/projects">
             <p className="certificateTitle">Different projects I have done for practicing development, tester and english skills.</p>
           </a>
@@ -105,13 +80,7 @@ export default function HomePage() {
       </div>
 
       {/* FOOTER BAR */}
-      <footer className="footer">
-        <div className="copirait">
-          <p className="footerText">
-            © {new Date().getFullYear()} Marina Shvachko. All rights reserved.
-          </p>
-        </div>
-      </footer>
+      <SiteFooter />
     </div>
   );
 }

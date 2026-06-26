@@ -111,12 +111,8 @@ h3 {
     align-items: center;
   }
 
-  /*.menu li {
-    float: none;
-  }*/
-
   .menuBurger {
-    display: block; /* иконка гамбургер видна */
+    display: block;
     padding-left: 20px;
     padding-top: 9px;
   }

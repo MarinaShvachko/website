@@ -132,7 +132,7 @@ p {
     text-align: center;
 }
 
-.pp { /*container for text*/
+.textBlock { /*container for text*/
 	width:90%;
 	margin: auto;
 	display: flex;
