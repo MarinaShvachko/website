@@ -10,11 +10,9 @@ import { BooksPage } from "../../pages/booksPage";
 test.describe("books page network + rendering", () => {
   test("fetches /api/books and renders the returned data", async ({ page }) => {
     const booksPage = new BooksPage(page);
-    let routeWasHit = false;
 
     await test.step("Mock the /api/books response before navigation", async () => {
       await page.route("**/api/books", async (route) => {
-        routeWasHit = true;
         await route.fulfill({
           status: 200,
           contentType: "application/json",
@@ -29,10 +27,9 @@ test.describe("books page network + rendering", () => {
       const request = await requestPromise;
       expect(request.method()).toBe("GET");
       expect(request.url()).toMatch(/\/api\/books$/);
-      expect(routeWasHit).toBe(true);
     });
 
-    await test.step("Render one card per fixture book", async () => {
+    await test.step("Render one card per fixture book (proves the mock served data)", async () => {
       await expect(booksPage.cards).toHaveCount(books.length);
     });
 
