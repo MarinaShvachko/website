@@ -30,6 +30,17 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+          git checkout -b update-snapshots-linux
           git add tests/
-          git diff --staged --quiet || git commit -m "chore: update playwright linux snapshots"
-          git push
+          git diff --staged --quiet && echo "No snapshot changes" && exit 0
+          git commit -m "chore: update playwright linux snapshots"
+          git push origin update-snapshots-linux --force
+      - name: Create Pull Request
+        run: |
+          gh pr create \
+            --title "chore: update playwright linux snapshots" \
+            --body "Auto-generated PR to update Playwright baseline screenshots for Linux CI." \
+            --base ${{ github.event.inputs.branch }} \
+            --head update-snapshots-linux || echo "PR already exists"
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
