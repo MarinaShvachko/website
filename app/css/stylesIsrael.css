@@ -1,60 +1,58 @@
-/* TODO: написать в одну строку все, что можно объединить*/
-
 * {
-	margin: 0;
+  margin: 0;
 }
 
 html,
 body {
-  	height: 100%;
+  height: 100%;
 }
 
 a {
-	text-decoration: none;
-	color: #fff;
-	margin: auto;
+  text-decoration: none;
+  color: #fff;
+  margin: auto;
 }
 
-a:hover { 
-    text-decoration: underline;
+a:hover {
+  text-decoration: underline;
 }
 
 h4 {
-	text-transform: uppercase;
-    font-weight: bold;
-    font-size: 21px;
-    line-height: 42px;
-    letter-spacing: -1px;
-    padding-top: 20px;
-    padding-bottom: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 42px;
+  letter-spacing: -1px;
+  padding-top: 20px;
+  padding-bottom: 10px;
 }
 
 .title {
-	font-family: 'Arial';
-	color: #000;
-    font-size: 18px;
-    line-height: 24px;
-    margin-bottom: 24px;
-    font-weight: 800;
-    text-transform: uppercase;
-    margin: auto;
+  font-family: "Arial";
+  color: #000;
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 24px;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin: auto;
 }
 
 .container {
-	width: 60%;
-	display: flex;
-	flex-wrap: wrap;
-	margin: auto;
+  width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
 }
 
 /***** content *****/
 
 .projectWrapper {
-	min-height: calc(100vh - 100px); /*press footer to bottom*/
-	width: 100%;
-	display: flex;
-	flex-wrap: wrap;
-    margin: auto;
+  min-height: calc(100vh - 100px); /*press footer to bottom*/
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
 }
 
 .figure1:hover,
@@ -66,118 +64,113 @@ h4 {
 .figure7:hover,
 .figure8:hover,
 .figure9:hover,
-.figure10:hover
- {
-	text-decoration: none;
+.figure10:hover {
+  text-decoration: none;
 }
 
-/*на странице 3 блока*/
+/* there are 3 blocks on the page*/
 .blockOfSquares {
-	display: flex;
-	flex-wrap: wrap;
-	width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
-/*.f1 {
-	/* width: 30%; width of a href
-	display: block;
-}*/
 .figure1 {
-	display: flex;
-	width: 30%;
-	height: 500px;
-	background: url("/img/Israel/day1.jpg") no-repeat;
-	background-position: center;
-	background-size: cover;
+  display: flex;
+  width: 30%;
+  height: 500px;
+  background: url("/img/Israel/day1.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
-.figures2and3and4 {
-	display: flex;
-	width: 70%;
-	height: 500px;
-	flex-wrap: wrap;
-	background: url("/img/sri2.jpg") no-repeat;
-	background-position: center;
-	background-size: cover;
+.figureGroup {
+  display: flex;
+  width: 70%;
+  height: 500px;
+  flex-wrap: wrap;
+  background: url("/img/sri2.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .figure2 {
-	display: flex;
-	width: 50%;
-	height: 250px;
-	background: url("/img/Israel/hotel.jpg") no-repeat;
-	background-position: center;
-	background-size: cover;
+  display: flex;
+  width: 50%;
+  height: 250px;
+  background: url("/img/Israel/hotel.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .figure3 {
-	display: flex;
-	width: 50%;
-	height: 250px;
-	background: url("/img/Israel/modernDistrics.jpg") no-repeat;
-	background-position: center;
-	background-size: cover;
+  display: flex;
+  width: 50%;
+  height: 250px;
+  background: url("/img/Israel/modernDistrics.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .figure4 {
-	display: flex;
-	width: 100%;
-	height: 250px;
-	background: url("/img/Israel/oldCity.jpg") no-repeat;
-	background-position: center;
-	background-size: cover;
+  display: flex;
+  width: 100%;
+  height: 250px;
+  background: url("/img/Israel/oldCity.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .figure5 {
-	display: flex;
-	width: 100%;
-	height: 250px;
-	background: url("/img/Israel/beaches.jpg") no-repeat;
-	background-position: center;
-	background-size: cover;
+  display: flex;
+  width: 100%;
+  height: 250px;
+  background: url("/img/Israel/beaches.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .figure6 {
-	display: flex;
-	width: 50%;
-	height: 250px;
-	background: url("/img/Israel/streetArt.jpg") no-repeat;
-	background-position: center;
-	background-size: cover;
+  display: flex;
+  width: 50%;
+  height: 250px;
+  background: url("/img/Israel/streetArt.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .figure7 {
-	display: flex;
-	width: 25%;
-	height: 250px;
-	background: url("/img/Israel/Jerusalem.jpg") no-repeat;
-	background-position: center;
-	background-size: cover;
+  display: flex;
+  width: 25%;
+  height: 250px;
+  background: url("/img/Israel/Jerusalem.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .figure8 {
-	display: flex;
-	width: 25%;
-	height: 250px;
-	background: url("/img/Israel/Haifa.jpg") no-repeat;
-	background-position: center;
-	background-size: cover;
+  display: flex;
+  width: 25%;
+  height: 250px;
+  background: url("/img/Israel/Haifa.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .figure9 {
-	display: flex;
-	width: 40%;
-	height: 500px;
-	background: url("/img/Israel/event.jpg") no-repeat;
-	background-position: center;
-	background-size: cover;
+  display: flex;
+  width: 40%;
+  height: 500px;
+  background: url("/img/Israel/event.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .figure10 {
-	display: flex;
-	width: 60%;
-	height: 500px;
-	background: url("/img/Israel/cat1.jpg") no-repeat;
-	background-position: center;
-	background-size: cover;
+  display: flex;
+  width: 60%;
+  height: 500px;
+  background: url("/img/Israel/cat1.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
 }

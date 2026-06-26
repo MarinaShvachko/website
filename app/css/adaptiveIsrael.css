@@ -1,69 +1,64 @@
-/* TODO: написать в одну строку все, что можно объединить*/
-
 @media screen and (max-width: 1200px) {
-
-.title {
-   font-size: 15px;
-}
+  .title {
+    font-size: 15px;
+  }
 }
 
 @media screen and (max-width: 1360px) {
-
-	.container {
-		width:90%;
-		display: flex;
-		flex-wrap: wrap;
-	}
-    .project {
-        width: 33.33%;
-	}
-    .footer {
-        width: 90%;
-    }
+  .container {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .project {
+    width: 33.33%;
+  }
+  .footer {
+    width: 90%;
+  }
 }
 
 @media screen and (max-width: 699px) {
+  .container {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+  }
 
-	.container {
-		width:90%;
-		display: flex;
-		flex-wrap: wrap;
-	}
-
-    .project {
-        width: 50%;
-	}
+  .project {
+    width: 50%;
+  }
 
   .title {
     font-size: 13px;
   }
 
-    .footer {
-        width: 90%;
-    }
+  .footer {
+    width: 90%;
+  }
 }
 
 @media screen and (max-width: 500px) {
-	.container {
-		width:90%;
-		display: flex;
-		flex-wrap: wrap;
-	}
-	.project {
-        width: 100%;
-	}
-    .imgInText {
-        width: 100%;
-    }
-    .title {
-        font-size: 10px;
-    }
+  .container {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .project {
+    width: 100%;
+  }
+  .imgInText {
+    width: 100%;
+  }
+  .title {
+    font-size: 10px;
+  }
 }
 
 /***** hamburger menu *****/
 
 .menuBurger {
-  display: none;   /* hide hamburger menu */
+  display: none; /* hide hamburger menu */
 }
 
 @media screen and (max-width: 450px) {
@@ -76,71 +71,69 @@
     height: 100%;
     align-items: center;
   }
-    .photoInText {
-        width: 100%;
-    }
-    .FullimgInText {
-        width: 100%;
-    }
-    .title {
-      font-size: 9px;
-    }
-  /*.menu li {
-    float: none;
-  }*/
+  .photoInText {
+    width: 100%;
+  }
+  .fullImgInText {
+    width: 100%;
+  }
+  .title {
+    font-size: 9px;
+  }
+
   .menuBurger {
-    display: block; /* иконка гамбургер видна */
+    display: block;
     padding-left: 20px;
     padding-top: 9px;
   }
-    .container {
-        width: 100%;
-    }
-    .projectWrapper {
-        width: 100%;
-        margin: auto;
-    }
-    .imgInText {
-        width: 100%;
-    }
-    .figure1 {
-        display: flex;
-        width: 30%;
-        height: 320px;
-    }
-    .figures2and3and4 {
-        display: flex;
-        width: 70%;
-        height: 320px;
-    }
-    .figure2 {
-        height: 160px;
-    }
-    .figure3 {
-        height: 160px;
-    }
-    .figure4 {
-        height: 160px;
-    }
-    .figure5 {
-        height: 160px;
-    }
+  .container {
+    width: 100%;
+  }
+  .projectWrapper {
+    width: 100%;
+    margin: auto;
+  }
+  .imgInText {
+    width: 100%;
+  }
+  .figure1 {
+    display: flex;
+    width: 30%;
+    height: 320px;
+  }
+  .figureGroup {
+    display: flex;
+    width: 70%;
+    height: 320px;
+  }
+  .figure2 {
+    height: 160px;
+  }
+  .figure3 {
+    height: 160px;
+  }
+  .figure4 {
+    height: 160px;
+  }
+  .figure5 {
+    height: 160px;
+  }
   .figure6 {
     height: 160px;
   }
-    .figure7 {
-        height: 160px;
-    }
-    .figure8 {
-        height: 160px;
-    }
-    .figure9 {
-        height: 250px;
-    }
-     .figure10 {
-        height: 250px;
-     }
-    .footer {
-        width: 100%;
-    }
+  .figure7 {
+    height: 160px;
+  }
+  .figure8 {
+    height: 160px;
+  }
+  .figure9 {
+    height: 250px;
+  }
+  .figure10 {
+    height: 250px;
+  }
+  .footer {
+    width: 100%;
+  }
 }

@@ -1,52 +1,47 @@
-/* TODO: написать в одну строку все, что можно объединить*/
-
 @media screen and (max-width: 960px) {
+  .container {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+  }
 
-	.container {
-		width:90%;
-		display: flex;
-		flex-wrap: wrap;
-	}
-
-.project {
+  .project {
     width: 33.33%;
-	}
-
+  }
 }
 
 @media screen and (max-width: 699px) {
+  .container {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+  }
 
-	.container {
-		width:90%;
-		display: flex;
-		flex-wrap: wrap;
-	}
-
-.project {
+  .project {
     width: 50%;
-	}
+  }
 }
 
 @media screen and (max-width: 500px) {
-	.container {
-		width:90%;
-		display: flex;
-		flex-wrap: wrap;
-	}
+  .container {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+  }
 
-	.project {
+  .project {
     width: 100%;
-	}
+  }
 
   .imgInText {
     width: 100%;
-}
+  }
 }
 
 /***** hamburger menu *****/
 
 .menuBurger {
-  display: none;   /* hide hamburger menu */
+  display: none; /* hide hamburger menu */
 }
 
 @media screen and (max-width: 450px) {
@@ -62,41 +57,35 @@
 
   .photoInText {
     width: 100%;
-}
+  }
 
-.FullimgInText {
+  .fullImgInText {
     width: 100%;
-}
-
-  /*.menu li {
-    float: none;
-  }*/
+  }
 
   .menuBurger {
-    display: block; /* иконка гамбургер видна */
+    display: block;
     padding-left: 20px;
     padding-top: 9px;
   }
 
-     .container {
+  .container {
     width: 100%;
-}
+  }
 
-.projectWrapper {
+  .projectWrapper {
     width: 100%;
     margin: auto;
-}
+  }
 
-.imgInText {
+  .imgInText {
     width: 100%;
-}
-.introductionL {
+  }
+  .introductionL {
     height: 160px;
+  }
 
-}
-
-.introductionT {
- 
+  .introductionT {
     height: 160px;
   }
 
@@ -112,19 +101,18 @@
   }
 
   .introduction2 {
-   height: 160px;
- }
+    height: 160px;
+  }
 
- .introductionL2 {
-   height: 160px;
- }
+  .introductionL2 {
+    height: 160px;
+  }
 
- .introduction3 {
-height: 250px;
- }
+  .introduction3 {
+    height: 250px;
+  }
 
- .introduction4 {
-height: 250px;
- }
-
+  .introduction4 {
+    height: 250px;
+  }
 }

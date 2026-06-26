@@ -1,11 +1,13 @@
 // app/travel/vietnam/page.tsx
 "use client";
 
-import { useState, useEffect } from 'react';
-import '../../css/common.css';
-import '../../css/vietnamStylesSimplePage.css';
-import '../../css/adaptiveStylesSimplePage.css';
-import { bindVietnamSliderListeners, syncVietnamSlider } from './vietnamSlider';
+import { useEffect } from "react";
+import SiteHeader from "@/app/components/SiteHeader";
+import SiteFooter from "@/app/components/SiteFooter";
+import "../../css/common.css";
+import "../../css/vietnamStylesSimplePage.css";
+import "../../css/adaptiveStylesSimplePage.css";
+import { bindVietnamSliderListeners, syncVietnamSlider } from "./vietnamSlider";
 
 const TOTAL_SLIDES = 11;
 
@@ -45,7 +47,8 @@ function VietnamSlider() {
             <div className="slider__item_inner">
               <a href="/travel/vietnam/day3">
                 <span className="slider__item_title">
-                  3 day: The walking trip to Long Sơn through a not touristic area
+                  3 day: The walking trip to Long Sơn through a not touristic
+                  area
                 </span>
               </a>
             </div>
@@ -64,9 +67,7 @@ function VietnamSlider() {
           <div className="slider__item slider__item_5">
             <div className="slider__item_inner">
               <a href="/travel/vietnam/day5">
-                <span className="slider__item_title">
-                  5 day: Pho Bo soup
-                </span>
+                <span className="slider__item_title">5 day: Pho Bo soup</span>
               </a>
             </div>
           </div>
@@ -85,7 +86,8 @@ function VietnamSlider() {
             <div className="slider__item_inner">
               <a href="/travel/vietnam/day7">
                 <span className="slider__item_title">
-                  7 day: THE DAY OF OVEREATING. Our visit to a cafe with a fixed price.
+                  7 day: THE DAY OF OVEREATING. Our visit to a cafe with a fixed
+                  price.
                 </span>
               </a>
             </div>
@@ -133,15 +135,25 @@ function VietnamSlider() {
         </div>
       </div>
 
-      <a className="slider__control slider__control_prev" href="#" role="button" aria-label="Previous slide" />
-      <a className="slider__control slider__control_next" href="#" role="button" aria-label="Next slide" />
+      <a
+        className="slider__control slider__control_prev"
+        href="#"
+        role="button"
+        aria-label="Previous slide"
+      />
+      <a
+        className="slider__control slider__control_next"
+        href="#"
+        role="button"
+        aria-label="Next slide"
+      />
 
       <ol className="slider__indicators">
         {Array.from({ length: TOTAL_SLIDES }).map((_, index) => (
           <li
             key={index}
             data-slide-to={index}
-            className={index === 0 ? 'active' : undefined}
+            className={index === 0 ? "active" : undefined}
             aria-label={`Go to slide ${index + 1}`}
           />
         ))}
@@ -151,43 +163,21 @@ function VietnamSlider() {
 }
 
 export default function VietnamPage() {
-  const [menuOpen, setMenuOpen] = useState(false);
-
   return (
     <div className="container">
-      <header className="header">
-        <div className="menuBurger" onClick={() => setMenuOpen(!menuOpen)}>
-          <svg width="32" height="32" xmlns="http://www.w3.org/2000/svg">
-            <g><title>background</title><rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1" /></g>
-            <g><title>Layer 1</title><path fill="#049900" id="svg_1" d="m4,10l24,0c1.104,0 2,-0.896 2,-2s-0.896,-2 -2,-2l-24,0c-1.104,0 -2,0.896 -2,2s0.896,2 2,2zm24,4l-24,0c-1.104,0 -2,0.896 -2,2s0.896,2 2,2l24,0c1.104,0 2,-0.896 2,-2s-0.896,-2 -2,-2zm0,8l-24,0c-1.104,0 -2,0.896 -2,2s0.896,2 2,2l24,0c1.104,0 2,-0.896 2,-2s-0.896,-2 -2,-2z" /></g>
-          </svg>
-        </div>
+      <SiteHeader />
 
-        <ul className={`menu clearfix ${menuOpen ? 'open' : ''}`}>
-          <li><a href="/">Home</a></li>
-          <li><a href="/projects">Projects</a></li>
-          <li><a href="/travel">Travel</a></li>
-          <li><a href="/books">Books</a></li>
-        </ul>
-      </header>
-
-      <div className="projectWrapper" style={{ order: 2, width: '100%' }}>
+      <div className="projectWrapper" style={{ order: 2, width: "100%" }}>
         <div className="containerForSlider">
           <h4>New Year 2020 in Vietnam</h4>
 
-          <div className="bodyN">
+          <div className="articleBody">
             <VietnamSlider />
           </div>
         </div>
       </div>
 
-      <footer className="footer" style={{ order: 3, width: '100%' }}>
-        <div className="copirait">
-          <p className="footerText">
-            © {new Date().getFullYear()} Marina Shvachko. All rights reserved.
-          </p>
-        </div>
-      </footer>
+      <SiteFooter style={{ order: 3, width: "100%" }} />
     </div>
   );
 }

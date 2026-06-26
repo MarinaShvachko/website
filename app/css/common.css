@@ -1,49 +1,49 @@
 /* Common header styles */
 
 ul {
-	list-style: none;
-	margin: 0;
-	padding-left: 0;
-	display: flex;
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+  display: flex;
 }
 
 .header {
-	width: 100%;
-	background: #2c2c2c;
-	height: 50px;
-	font-family: initial;
-	line-height: initial;
+  width: 100%;
+  background: #2c2c2c;
+  height: 50px;
+  font-family: initial;
+  line-height: initial;
 }
 
 .header a {
-	padding: 16px;
-	display: block;
-	width: 50px;
-	text-align: center;
-	box-sizing: content-box;
+  padding: 16px;
+  display: block;
+  width: 50px;
+  text-align: center;
+  box-sizing: content-box;
 }
 
 /* Common footer styles */
 
 .footer {
-	width: 100%;
-	background: #2c2c2c;
-	height: 50px;
-	display: flex;
-	align-self: flex-end;
-	margin: auto;
+  width: 100%;
+  background: #2c2c2c;
+  height: 50px;
+  display: flex;
+  align-self: flex-end;
+  margin: auto;
 }
 
-.copirait {
-	width:100%;
-	align-self: flex-end;
+.copyright {
+  width: 100%;
+  align-self: flex-end;
 }
 
 .footerText {
-	font-family: 'Arial';
-    color: #fff;
-    font-size: 11px;
-    line-height: 28px;
-    padding-left: 25px;
-    margin-bottom: 5px;
+  font-family: "Arial";
+  color: #fff;
+  font-size: 11px;
+  line-height: 28px;
+  padding-left: 25px;
+  margin-bottom: 5px;
 }

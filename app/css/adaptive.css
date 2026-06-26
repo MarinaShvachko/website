@@ -1,143 +1,149 @@
-/* TODO: написать в одну строку все, что можно объединить*/
-
 @media screen and (max-width: 1366px) {
-	.container {
-		width:70%;
-	}
+  .container {
+    width: 70%;
+  }
 
-	.aboutMe {
-		width: 50%;
-		height: 350px;
-	}
+  .aboutMe {
+    width: 50%;
+    height: 350px;
+  }
 
-	.myPhoto {
-		width: 50%;
-		height: 350px;
-	}
+  .myPhoto {
+    width: 50%;
+    height: 350px;
+  }
 
-	.certificateTitle {
+  .certificateTitle {
     font-size: 18px;
     line-height: 30px;
-	}
+  }
 
-	.certificates, .box42 {
-		height: 150px;
-	}
+  .certificates,
+  .box42 {
+    height: 150px;
+  }
 
-	.blogPhoto, .blogLink {
-		width: 50%;
-		height: 350px;
-	}
+  .blogPhoto,
+  .blogLink {
+    width: 50%;
+    height: 350px;
+  }
 }
 
 @media screen and (max-width: 1160px) {
-	p {
+  p {
     font-size: 16px;
-	}
+  }
 }
 
-
 @media screen and (max-width: 959px) {
-	.container {
-		width:80%;
-	}
+  .container {
+    width: 80%;
+  }
 
-	h1 {
-		font-size: 35px;
-	}
+  h1 {
+    font-size: 35px;
+  }
 
-	h2 {
-		font-size: 20px;
-	}
+  h2 {
+    font-size: 20px;
+  }
 
-	.introduction {
-		height: 350px;
-	}
+  .introduction {
+    height: 350px;
+  }
 
-	.aboutMe {
-		width: 100%;
-		height: 300px;
-		order: 4;
-	}
+  .aboutMe {
+    width: 100%;
+    height: 300px;
+    order: 4;
+  }
 
-	.myPhoto {
-		width: 100%;
-		height: 300px;
-		order: 3;
-	}
+  .myPhoto {
+    width: 100%;
+    height: 300px;
+    order: 3;
+  }
 
-	.certificateTitle {
+  .certificateTitle {
     font-size: 16px;
     line-height: 25px;
-	}
+  }
 
-	.blogPhoto, .blogLink {
-		width: 50%;
-		height: 250px;
-	}
+  .blogPhoto,
+  .blogLink {
+    width: 50%;
+    height: 250px;
+  }
 
-	.certificates, .projects {
-		height: 100px;
-	}
+  .certificates,
+  .projects {
+    height: 100px;
+  }
 
-	p {
-        font-size: 14px;
-	}
+  p {
+    font-size: 14px;
+  }
 }
 
 @media screen and (max-width: 649px) {
-	.container {
-		width:90%;
-		display: flex;
-		flex-wrap: wrap;
-	}
+  .container {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+  }
 
-	p {
-    	font-size: 16px;
-	}
+  p {
+    font-size: 16px;
+  }
 
-	.header a {
-		border-right: 0;
-	}
+  .header a {
+    border-right: 0;
+  }
 
-	h1 {
-	    font-size: 24px;
-	    line-height: 45px;
-	}
+  h1 {
+    font-size: 24px;
+    line-height: 45px;
+  }
 
-	h2 {
-    	font-size: 14px;
-	}
+  h2 {
+    font-size: 14px;
+  }
 
-	.certificateTitle {
-	    font-size: 12px;
-	    line-height: 20px;
-	}
+  .certificateTitle {
+    font-size: 12px;
+    line-height: 20px;
+  }
 
-	.introduction, .aboutMe, .myPhoto, .blogPhoto, .blogLink {
-		width: 100%;
-		height: 300px;
-	}
+  .introduction,
+  .aboutMe,
+  .myPhoto,
+  .blogPhoto,
+  .blogLink {
+    width: 100%;
+    height: 300px;
+  }
 
-	.certificates, .projects {
-		height: 100px;
-	}
+  .certificates,
+  .projects {
+    height: 100px;
+  }
 
-	.footer {
-		height: 50px;
-	}
+  .footer {
+    height: 50px;
+  }
 
-	.myPhoto {
-		order: 3;
-	}
+  .myPhoto {
+    order: 3;
+  }
 
-	.aboutMe {
-		order: 4;
-	}
+  .aboutMe {
+    order: 4;
+  }
 
-	.blogPhoto {
-		background-position: center left;
-	}
+  .blogPhoto {
+    background-position: center left;
+  }
 }
 
 @media screen and (max-width: 450px) {
@@ -150,10 +156,6 @@
     height: 100%;
     align-items: center;
   }
-
-  /*.menu li {
-    float: none;
-  }*/
 
   .menuBurger {
     display: block; /* иконка гамбургер видна */
