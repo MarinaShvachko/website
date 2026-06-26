@@ -1,0 +1,25 @@
+{
+  // Cloudflare Worker config (JSONC) for the Books API.
+  //
+  // This Worker serves a list of books as JSON from a Cloudflare D1 database.
+  // Local dev runs on http://localhost:8787 (default wrangler port), so the
+  // full local endpoint is http://localhost:8787/api/books.
+  //
+  // IMPORTANT: The d1_databases[].database_id below is a PLACEHOLDER. After you
+  // run `wrangler d1 create books-db`, paste the returned UUID in place of
+  // "REPLACE_WITH_D1_DATABASE_ID". See README.md for full setup steps.
+  "name": "books-api",
+  "main": "src/index.ts",
+  "compatibility_date": "2025-06-01",
+  "observability": {
+    "enabled": true
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "books-db",
+      "database_id": "352bf888-b80c-4bdc-b61b-25e7ccb97d4e",
+      "migrations_dir": "migrations"
+    }
+  ]
+}

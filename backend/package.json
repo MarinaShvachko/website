@@ -1,0 +1,15 @@
+{
+  "name": "books-api-backend",
+  "private": true,
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "db:migrate:local": "wrangler d1 migrations apply books-db --local",
+    "db:migrate:remote": "wrangler d1 migrations apply books-db --remote",
+    "seed:local": "wrangler d1 migrations apply books-db --local"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "latest",
+    "wrangler": "latest"
+  }
+}
