@@ -6,7 +6,6 @@ import SiteHeader from "@/app/components/SiteHeader";
 import SiteFooter from "@/app/components/SiteFooter";
 import "../../css/common.css";
 import "../../css/vietnamStylesSimplePage.css";
-import "../../css/adaptiveStylesSimplePage.css";
 import { bindVietnamSliderListeners, syncVietnamSlider } from "./vietnamSlider";
 
 const TOTAL_SLIDES = 11;
