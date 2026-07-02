@@ -115,7 +115,7 @@ export default function BooksPage() {
       <SiteHeader />
 
       <div className="projectWrapper">
-        <h4>Books that I would advise everybody to read.</h4>
+        <h4>Books I Can't Stop Recommending</h4>
 
         <div className="booksControls">
           <div className="booksSearchField">
