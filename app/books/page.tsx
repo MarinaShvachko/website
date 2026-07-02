@@ -5,8 +5,6 @@ import SiteHeader from "@/app/components/SiteHeader";
 import SiteFooter from "@/app/components/SiteFooter";
 import type { Book } from "./books.types";
 import "../css/books.css";
-import "../css/adaptivebooks.css";
-import "../css/booksFilters.css";
 
 const BOOKS_API_URL =
   process.env.NEXT_PUBLIC_BOOKS_API_URL ?? "http://localhost:8787/api/books";
@@ -117,7 +115,7 @@ export default function BooksPage() {
       <SiteHeader />
 
       <div className="projectWrapper">
-        <h4>Books that I would advise everybody to read.</h4>
+        <h4>Books I Can't Stop Recommending</h4>
 
         <div className="booksControls">
           <div className="booksSearchField">

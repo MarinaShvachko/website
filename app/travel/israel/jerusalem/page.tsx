@@ -2,8 +2,6 @@ import SiteHeader from "@/app/components/SiteHeader";
 import SiteFooter from "@/app/components/SiteFooter";
 import "../../../css/common.css";
 import "../../../css/stylesSimplePage.css";
-import "../../../css/vietnamStylesSimplePage.css";
-import "../../../css/adaptiveStylesSimplePage.css";
 
 export default function IsraelJerusalemPage() {
   return (

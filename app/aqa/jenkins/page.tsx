@@ -3,7 +3,6 @@ import SiteHeader from "@/app/components/SiteHeader";
 import SiteFooter from "@/app/components/SiteFooter";
 import "../../css/common.css";
 import "../../css/stylesAqaNotes.css";
-import "../../css/adaptiveStylesAqaNotes.css";
 
 export default function JenkinsPage() {
   return (

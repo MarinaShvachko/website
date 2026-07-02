@@ -96,3 +96,120 @@ a:hover {
 .projectName:hover {
   text-decoration: underline;
 }
+
+/***** adaptive *****/
+
+@media screen and (max-width: 1520px) {
+  .project {
+    width: 48%;
+    box-sizing: border-box;
+    border: 1px solid #fff;
+    background-position: center;
+    /*background-size: cover;*/
+    border-color: #00994d;
+    margin-top: 15px;
+  }
+
+  .footer {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .container {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .project {
+    width: 32.33%;
+    box-sizing: border-box;
+    border: 1px solid #fff;
+    background-position: center;
+    border-color: #00994d;
+    margin-top: 15px;
+  }
+
+  .footer {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 699px) {
+  .container {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .project {
+    width: 49%;
+  }
+
+  .footer {
+    width: 90%;
+    margin-top: 9px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .project {
+    width: 100%;
+  }
+
+  .footer {
+    margin-top: 9px;
+  }
+}
+
+/***** hamburger menu *****/
+
+.menuBurger {
+  display: none; /* hide hamburger menu */
+}
+
+@media screen and (max-width: 450px) {
+  .menu {
+    display: none; /* hide menu items */
+    background: #2c2c2c;
+    position: absolute;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+  }
+
+  .menuBurger {
+    display: block;
+    padding-left: 20px;
+    padding-top: 9px;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .project {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .footer {
+    width: 100%;
+    margin-top: 9px;
+  }
+
+  .menu.open {
+    display: flex !important;
+    top: 50px; /* Aligns the dropdown neatly under your 50px header bar */
+    height: auto;
+  }
+}

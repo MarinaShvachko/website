@@ -4,7 +4,7 @@ import { useState } from "react";
 import SiteHeader from "@/app/components/SiteHeader";
 import SiteFooter from "@/app/components/SiteFooter";
 import "../../css/common.css";
-import "../../css/stylesTurkey.css";
+import "../../css/stylesEuropeSidebar.css";
 
 export default function SpainPage() {
   const [showStory, setShowStory] = useState(false);

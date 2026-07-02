@@ -4,7 +4,7 @@ import { useState } from "react";
 import SiteHeader from "@/app/components/SiteHeader";
 import SiteFooter from "@/app/components/SiteFooter";
 import "../../css/common.css";
-import "../../css/stylesTurkey.css";
+import "../../css/stylesEuropeSidebar.css";
 
 const stories: Record<string, string> = {
   aboutVacation: `<p><p>Some days ago I’ve returned from a vacation. It was a great and unusual trip for us and I’m going to tell you about it. I’ll try not to be too boring.</p><p>It was the first time we spent a vacation with our friends. They are a married couple, their names are Lena and Andrey. We planned and booked all our trip together. Lena wanted to visit Prague because she has been learning the Czech language. I wanted to see an European country I haven’t visited before. The boys wanted to eat meat and drink beer.</p><p>We were lucky because we bought really cheap flights. The flight tickets were so cheap that we didn’t believe in it! A one round trip ticket cost only 5700 rubles per person (it’s about 90$). As a result we had a flight rout: Ekaterinburg-Moscow-Vienna-Moscow-Ekaterinburg. We spent 5 gays in Budapest, 6 days in Prague (for Lena) and 2 days in Vienna (for me, because I haven’t been there before) and 1 additional day in Moscow (but at the beginning of our journey we didn’t suspect about this day).</p><p>So… once upun a time, there were 4 friends … or Part №1 is coming.</p><p><img class='imgInText' src='/img/vacation/vacation.jpg'></p></p>`,

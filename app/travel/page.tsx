@@ -3,7 +3,6 @@ import SiteHeader from "@/app/components/SiteHeader";
 import SiteFooter from "@/app/components/SiteFooter";
 import "../css/common.css";
 import "../css/stylesTravel.css";
-import "../css/adaptiveTravel.css";
 
 export default function TravelPage() {
   return (
