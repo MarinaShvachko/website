@@ -2,7 +2,6 @@ import SiteHeader from "@/app/components/SiteHeader";
 import SiteFooter from "@/app/components/SiteFooter";
 import "../../css/common.css";
 import "../../css/stylesIsrael.css";
-import "../../css/adaptiveIsrael.css";
 
 export default function IsraelPage() {
   return (

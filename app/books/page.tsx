@@ -5,8 +5,6 @@ import SiteHeader from "@/app/components/SiteHeader";
 import SiteFooter from "@/app/components/SiteFooter";
 import type { Book } from "./books.types";
 import "../css/books.css";
-import "../css/adaptivebooks.css";
-import "../css/booksFilters.css";
 
 const BOOKS_API_URL =
   process.env.NEXT_PUBLIC_BOOKS_API_URL ?? "http://localhost:8787/api/books";
